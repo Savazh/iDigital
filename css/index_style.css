@@ -1,0 +1,1145 @@
+h1 {
+    color: brown;
+}
+
+.content {
+  display: none;
+}
+
+*{
+  margin: 0px;
+}
+
+/* LINKS "A" */
+a {
+    color: #ff0000 ;
+}
+a:link {
+    text-decoration: none;
+    color: #ff0000 ;
+}
+/* a:active {
+    text-decoration: none;
+    color: #ff0000 ;
+} */
+/* a:visited { 
+    text-decoration: none; 
+    color: #1575f3;
+} */
+a:hover {
+    text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: black; /* Цвет ссылки */
+   } 
+
+
+/* html {
+    font-size: 30px;
+} */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: ghostwhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 2048px; */
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* Page
+=================================================*/
+
+.page {
+    width: 100%;
+    height: 500px;
+    /* min-width: 770px; */
+    /*Зона видимости  1 экран */
+    position: relative;
+    /* overflow: hidden; */
+    /* background: url(../img/img_1.jpg) center,
+        no-repeat; */
+    background-size: cover;
+}
+
+
+/* Header
+=================================================*/
+
+  .header {
+    background-color: #1f2732;
+    opacity: 90%;
+    position: fixed;
+    top: -80pt;
+    width: 100%;
+    display: block;
+    transition: top 0.5s;
+    z-index: 2;
+    height: 70pt;
+  }
+
+.company_logo {
+    margin-left: 1%;
+    float: left;
+    /* padding-top: 1%; */
+    position: fixed;
+    z-index: 3;
+}
+
+.company_name {
+    float: left;
+    padding-top: 0.7%;
+    padding-left: 5%;
+    position: fixed;
+    z-index: 3;
+    color:red;
+}
+
+.menu_button {
+    margin-left: 95%;
+    top: -20px;
+    padding-top: 1%;
+    color: white;    
+    position: fixed;
+    z-index: 2;
+}
+
+.styleDesign{
+    color: #000;
+    font-weight: 700;
+}
+/*///////////////////// BTN ////////////////////////////////*/
+
+/*///////////////////// HUM ////////////////////////////////*/
+
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 5;
+  }
+
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: red;
+    stroke-width:5.5;
+    stroke-linecap:round;
+    z-index: 5;
+  }
+  
+  .ham3 .top {
+    stroke-dasharray: 40 130;
+  }
+
+  .ham3 .middle {
+    stroke-dasharray: 40 140;
+  }
+
+  .ham3 .bottom {
+    stroke-dasharray: 40 205;
+  }
+
+  .ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+  }
+
+  .ham3.active .middle {
+    stroke-dashoffset: -102px;
+  }
+
+  .ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+  }
+  
+  
+/* Right-Sided Navigation
+=================================================*/
+
+/* Clearfix (clear floats) */
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    padding-top: 80px;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    font-size: 16pt;
+}
+
+.sidenav a {
+    padding: 8px 100px 8px 50px;
+    text-decoration: none;
+    font-size: 22px;
+    /* color: #818181; */
+    color: ghostwhite;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+    color: #ff0000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    display: block;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.phone_navbar {
+    color: ghostwhite;
+    font-weight: 500;
+    font-size: 14pt;
+    padding-left: 40px;
+    padding-top: 25%;
+}
+
+.phone_highlight {
+    color: #ff497c !important;
+}
+
+
+/* Block_1
+=================================================*/
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  /* height: 1000px; */
+  position: relative;
+  margin: auto;
+  background-color: ghostwhite;
+}
+
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  /* z-index: 2; */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: none;
+}
+
+.activeSlide {
+    background-color: #717171;
+  }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+/* .block_1_container {
+    display: flex;
+    background-color: ghostwhite;
+    background: url(../img/img_104.jpg) center, no-repeat;
+    background-size: cover;
+    height: 1000px;
+    justify-content: space-between;
+} */
+
+/* .block_1_logo {
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+    top: 0.5rem;
+} */
+
+/* .block_1_span{
+    
+} */
+/* .block_2_span{
+    
+} */
+/* .block_3_span{
+    
+} */
+/* .block_4_span{
+    
+} */
+
+/* .block_1_column_left {
+    position: relative;
+    size: 100%;
+    padding-right: 100px;
+    padding-left: 25%;
+    padding-top: 40%;
+}
+
+.block_1_column_right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 600px;
+    height: 800px;
+    padding-right: 5%;
+    padding-left: 95%;
+    margin-left: 98%;
+    margin-top: -900px;
+} */
+
+
+/* Block_2
+=================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+.block2Row {
+  margin-top: -100px;
+}
+
+.block2Header {
+    /* text-align: center; */
+    font-size: 36pt;
+    font-weight: 600;
+    padding-bottom: 50px;
+  }
+
+.block2Column_left {
+  float: left;
+  padding: 300px;
+  width: 65%;
+  /* padding: 10px; */
+  padding-top: 150px;
+  /* font-size: 36pt; */
+}
+
+.block2Text1 {
+    font-size: 20pt;
+    padding-bottom: 30px;
+}
+
+.block2Text2 {
+    font-size: 18pt;
+    padding-bottom: 30px;
+    color: darkgrey;
+}
+
+.block2Text3 {
+    font-size: 16pt;
+    font-weight: 500;
+    color: red;
+    padding-bottom: 10px;
+}
+
+.block2Text4 {
+    font-weight: 600;
+    font-size: 15pt;
+}
+
+.block2Column_left p {
+    line-height: 2;
+}
+
+.block2Column_right {
+  float: left;
+  height: 900px;
+
+  /* margin-left: 200px; */
+  width: 35%;
+  /* padding: 100px; */
+  background: url(../img/img_88_1.jpg) center, no-repeat;
+  background-color: ghostwhite;
+  padding-top: 150px;
+  /* font-size: 36pt; */
+}
+
+.block2_image {
+    position: absolute;
+    /* z-index: 1; */
+    width: 800px;
+    top: 2;
+    left: 1;
+    margin-left: -270px;
+    /* padding-right: 400px; */
+    /* padding-top: -500px; */
+}
+
+
+/* Clear floats after the columns */
+.block2Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .block2Column_left {
+      width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .block2Column_right {
+      width: 100%;
+  }
+}
+
+
+/* Block_3_Services
+=================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+.block3Row {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 30px;
+    text-align: center;
+    background: url(../img/img_330.jpg) center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block3Header {
+    text-align: center;
+    font-size: 36pt;
+    font-weight: 600;
+    /* padding-top: 50px; */
+}
+
+.block3Text { 
+    text-align: center;
+    padding-top: 10px;
+}
+  
+  /* @media screen and (min-width: 601px) {
+    .block3Header {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .block3Header {
+      font-size: 30px;
+    }
+  } */
+  
+  .block3Column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    line-height: 2;
+}
+
+.block3Column i {
+    color: #1919e6;
+}
+
+.block3Column i:hover {
+    color: red;
+    /* Подключаем свойство transform-style для 3D */
+transform-style: preserve-3d;
+/* Подключаем анимацию для вращения и обзора */
+animation: main-rotate 0.5s  linear;
+}
+
+/* Анимация вращение вокруг вертикальной оси*/
+@keyframes main-rotate {
+    100% {
+    transform: rotateY(360deg);
+    }
+}
+
+.block3Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .block3Column  {
+        width: 100%;
+    }
+} 
+
+
+/* Block_4_Projects
+=================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+.block4Row {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.block4Header {
+    text-align: center;
+    font-size: 36pt;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .block4Text {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Create four equal columns that floats next to each other */
+.block4Column {
+    float: left;
+    width: 25%;
+    height: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 3;
+}
+
+.contentWrapper {
+    background: ghostwhite; /* Цвет фона */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+
+/* Контейнер, в котором размещаем изображение */
+ .block4Picture {
+    width: 100%;
+    max-width: 648px; /* отзывчивые размеры  (опционально) */
+    margin: 0 auto; /* распологаем по центру */
+    padding: 0;
+    overflow: hidden;
+    position: relative; /* относительное позиционирование */
+    cursor: pointer;
+/* Внешняя тень блока с изображением */
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Стили изображения внутри родительского контейнера */
+.block4Picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+/* трансформация - реальный масштаб картинки */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+/* время исполнения трансформации */
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+/* Масштабируем изображение с помощью трансформации  при наведении */
+.block4Picture:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+ 
+/* Воспроизведём  эффект наклонного блика */
+.block4Picture::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+/* Используем линейный градиент определим начальное и конечное расположение, цвет, размер и элементы трансформации */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+/* Создадим анимацию и установим время исполнения */
+.block4Picture:hover::before {
+    -webkit-animation: shine .85s;
+    animation: shine .85s;
+}
+
+/* описываем анимацию CSS свойств в виде перечня ключевых кадров */
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+ 
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+/* Clear floats after the columns */
+.block4Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .block4Column {
+        width: 100%;
+    }
+}
+
+
+/* Block_6
+=================================================*/
+
+.block_6_header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    background-color: ghostwhite;
+    min-height: 100px;
+    float: center;
+    padding-top: 3%;
+}
+
+.block_6_container {
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #3AAFAB;
+    color: #fff;
+    padding: 50px 0;
+    padding-top: 3%;
+}
+
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner {
+    padding: 0 8px;
+}
+
+.flex-outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+    flex: 1 0 220px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+.block_6_wrapper {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
+
+
+/* Footer
+=================*/
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background: url(../img/img_99.jpg) center;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: ghostwhite;
+  text-align: center;
+}
+
+.footer_icon_wrap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.email-text, p {
+  color: #666666 !important;
+}
+
+/* Create five equal columns that floats next to each other */
+.footerColumn {
+  text-align: center;
+  margin-right: 95px;
+}
+
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerColumn {
+  text-align: center;
+  margin-right: 75px;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .footerColumn  {
+      width: 50%;
+  }
+
+  .menu_button{
+    margin-left: 620px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .footerColumn  {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px){
+  .block_1_container{
+    padding: 0px !important; 
+    float: center;
+  }
+}
+
+
+
+/* Scroll Up Button
+=================*/
+
+.topNubex {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  color: orange;
+  animation: pulse 1.2s ease infinite;
+ }
+
+ @media (max-width:500px){
+  .block_1_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+
+
+  .footerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+ }
+
+
+
+   /* Media
+   =============================== */
+              /* Smartphones (portrait and landscape) ----------- */
+
+        @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 768px) {
+        .page{
+            min-width: 768px;
+        }
+    
+        .block2_image {
+          position: absolute;
+          /* z-index: 1; */
+          width: 800px;
+          top: 2;
+          left: 1;
+          margin-left: -55px;
+          /* padding-right: 400px; */
+          /* padding-top: -500px; */
+      }
+        .slideshow-container{
+            height: auto;
+        }
+    
+        .mySlides .fade{
+            display: none;
+        }
+        
+          .footerRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        
+          .menu_button{
+            margin-left: 620px;
+          }
+    
+          .footerColumn {
+            text-align: center;
+            margin-right: 95px;
+      
+          }
+        
+          .block2Column_left{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 70px;
+              margin-top: 100px;
+          }
+          
+          .block3Row{
+              width: 100%;
+              padding: 0px;
+          }
+
+          .block3Column{
+            padding: 35px;
+            width: 28%;
+            
+          }
+
+          .block3ColumnStyle{
+            margin-left: 100px;
+            text-align: center;
+          }
+
+          .block3Text, .block4Text{
+              font-size: 20pt;
+          }
+
+          .logofa{
+              font-size: 45pt;
+          }
+          .block3ColumnMainText{
+            font-size: 15pt;
+            margin-left: -12px;
+          }
+
+          .block3ColumnSecText, .block4ColumnSecText{
+            font-size: 15pt;
+
+          }
+
+          .block4Column{
+              width: 50%;
+          }
+        
+          .block4Logo{
+              font-size: 15pt;
+          }
+
+          .email-text{
+              margin-left: -40px;
+              color: #666666;
+          }
+
+          .company_logo {
+            margin-left: 0.5%;
+            float: left;
+            padding-top: 1%;
+            z-index: 3;
+        }
+
+        .company_name{
+            font-size: 20pt;
+            margin-left: 3%;
+        }
+      }
+
+      /*================================
+          ... правила для планшетов ...
+        */
+           /* iPads (portrait and landscape) ----------- */
+
+            @media only screen
+                and (min-device-width: 600px)
+                and (max-device-width: 1024px) {
+
+            .page{
+                min-width: 1980px;
+            }
+        
+            .slideshow-container{
+                height: auto;
+            }
+        
+            .mySlides .fade{
+                display: none;
+            }
+            
+              .footerRow{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+              }
+            
+              .menu_button{
+                margin-left: 1960px;
+              }
+    
+        
+              .footerColumn {
+                text-align: center;
+                margin-right: 95px;
+          
+              }
+            
+              .block2Column_left{
+                  display: flex;
+                  float: left;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  padding: 40px;
+                  margin-top: 100px;
+              }
+              .block2Column_right{
+                display: flex;
+                float: right;
+                margin-left: 100px;
+              }
+
+              .block2Header{
+                text-align: center;
+              }
+              .block2Text1{
+                text-align: center;
+                font-size: 30pt;
+              }
+              .block2Text2{
+                text-align: center;
+                font-size: 25pt;
+              }
+              
+              .block2Text3,.block2Text4{
+                font-size: 20pt;
+              }
+              
+              .block3Row{
+                  width: 100%;
+                  padding: 0px;
+              }
+    
+              .block3Column{
+                padding: 35px;
+                width: 28%;
+                
+              }
+    
+              .block3ColumnStyle{
+                margin-left: 320px;
+                text-align: center;
+              }
+    
+              .block3Text, .block4Text{
+                  font-size: 25pt;
+              }
+    
+              .logofa{
+                  font-size: 45pt;
+              }
+              .block3ColumnMainText{
+                font-size: 25pt;
+                margin-left: -12px;
+              }
+    
+              .block3ColumnSecText, .block4ColumnSecText{
+                font-size: 20pt;
+    
+              }
+    
+              .block4Column{
+                  width: 50%;
+              }
+
+              .contentWrapper{
+                  display: flex;
+
+              }
+              .block4Logo{
+                  font-size: 20pt;
+                  margin-left: 25px;
+              }
+    
+              .email-text{
+                  margin-left: -40px;
+                  color: #666666;
+              }
+    
+              .company_logo {
+                margin-left: 1%;
+                float: left;
+                padding-top: 1%;
+                z-index: 3;
+            }
+    
+            .company_name{
+                font-size: 25pt;
+            }
+          }
+
+          /* iPads PRO(portrait and landscape) ----------- */
+
+          @media only screen
+          and (min-device-width: 1024px)
+          and (max-device-width: 1524px) {
+            .page{
+              min-width: 1920px;
+              width: 100%;
+            }
+          }

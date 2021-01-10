@@ -1,0 +1,551 @@
+h1 {
+    color: brown;
+}
+
+.content {
+    display: none;
+  }
+
+/* LINKS "A" */
+a {
+    color: #ff0000 ;
+}
+a:link {
+    text-decoration: none;
+    color: #ff0000 ;
+}
+/* a:active {
+    text-decoration: none;
+    color: #ff0000 ;
+} */
+/* a:visited { 
+    text-decoration: none; 
+    color: #1575f3;
+} */
+a:hover {
+    text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: black; /* Цвет ссылки */
+   } 
+
+
+html {
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: ghostwhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: 14pt;
+}
+
+q {
+    font-size: 16pt;
+}
+
+.container {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+/* Page
+=================*/
+
+.page {
+    width: 100%;
+    height: 50px;
+    min-width: 770px;
+    /*Зона видимости  1 экран */
+    position: relative;
+    /* overflow: hidden; */
+    background: url(../img/img_1.jpg) center,
+    no-repeat;
+    background-size: cover;
+}
+
+
+/* Header
+=================*/
+
+.header {
+    background-color: #1f2732;
+    opacity: 90%;
+    position: fixed;
+    /* top: -80pt; */
+    width: 100%;
+    display: block;
+    /* transition: top 0.5s; */
+    z-index: 2;
+    height: 70pt;
+  }
+
+.company_logo {
+    margin-left: 1%;
+    float: left;
+    padding-top: 1%;
+    position: fixed;
+    z-index: 3;
+}
+
+.company_name {
+    float: left;
+    padding-top: 0.7%;
+    padding-left: 5%;
+    position: fixed;
+    z-index: 3;
+    color:red;
+}
+
+.menu_button {
+    margin-left: 95%;
+    top: -20px;
+    padding-top: 1%;
+    color: white;    
+    position: fixed;
+    z-index: 2;
+}
+
+/*///////////////////// HUM ////////////////////////////////*/
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 5;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: red;
+    stroke-width:5.5;
+    stroke-linecap:round;
+    z-index: 5;
+  }
+
+  .ham6 .top {
+    stroke-dasharray: 40 172;
+  }
+  .ham6 .middle {
+    stroke-dasharray: 40 111;
+  }
+  .ham6 .bottom {
+    stroke-dasharray: 40 172;
+  }
+  .ham6.active .top {
+    stroke-dashoffset: -132px;
+  }
+  .ham6.active .middle {
+    stroke-dashoffset: -71px;
+  }
+  .ham6.active .bottom {
+    stroke-dashoffset: -132px;
+  }
+
+/* Right-Sided Navigation
+=================*/
+
+/* Clearfix (clear floats) */
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    padding-top: 80px;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    font-size: 16pt;
+}
+
+.sidenav a {
+    padding: 8px 100px 8px 50px;
+    text-decoration: none;
+    font-size: 22px;
+    /* color: #818181; */
+    color: ghostwhite;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+    color: #ff0000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    display: block;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .phone_navbar {
+    color: ghostwhite;
+    font-weight: 500;
+    font-size: 14pt;
+    padding-left: 40px;
+    padding-top: 25%;
+}
+  
+  .phone_highlight {
+      color: #ff497c !important;
+  }
+
+
+/* Breadcrumbs
+=================*/
+
+.breadcrumbs_container {
+    display: flex;
+    padding-top: 80pt;
+    align-content: center;
+    position: relative;
+    background: url(../img/breadcrumbs.jpg) no-repeat center / cover;
+    clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 100% 75%, 100% 0%);
+}
+
+.breadcrumbs_row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 2%;
+    margin: auto;
+    min-height: 150px;
+    justify-content: space-around;
+    font-size: 36pt;
+}
+
+.breadcrumbs-title {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    text-transform: none;
+    word-wrap: break-word;
+    line-height: 1;
+} 
+
+.breadcrumb {
+    display: flex; 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    flex-flow: row wrap;    
+    justify-content: space-evenly;
+    margin: 5px 0 10px 0;
+    padding: 0;
+    background-color: transparent;
+    color: #1f2732;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    }
+
+
+.first-item {
+    display: flex;
+}
+
+.second-item {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.last-item {
+    display: flex;
+    margin-top: -9px;
+}
+
+
+/* Block_1
+=================*/
+
+img {
+    margin-top: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block_1_text {
+    display: block;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 50%;
+    /* background-color: #f1f1f1f1; */
+    padding-bottom: 50px;
+}
+
+.portfolioLink {
+    font-size: 14pt;
+}
+
+
+/* Block_2
+=================*/
+
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  padding-top: 20px;
+
+}
+
+.reviewHeader {
+    text-align: center;
+    font-size: 14;
+    font-weight: 500;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+/* .active, .dot:hover {
+    background-color: #717171;
+  } */
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+
+/* Footer
+=================*/
+
+* {
+    box-sizing: border-box;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../img/img_99.jpg) center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.footer_icon_wrap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.email-text, p {
+    color: #666666 !important;
+  }
+  
+  /* Create five equal columns that floats next to each other */
+  .footerColumn {
+    text-align: center;
+    margin-right: 95px;
+  }
+  
+  .footerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footerColumn {
+    text-align: center;
+    margin-right: 75px;
+  
+  }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .footerColumn  {
+        width: 50%;
+    }
+    .menu_button{
+        margin-left: 620px;
+      }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .footerColumn  {
+        width: 100%;
+    }
+    .menu_button{
+        margin-left: 620px;
+      }
+
+}
+ /* iPads (portrait and landscape) ----------- */
+
+ @media only screen
+ and (min-device-width: 600px)
+ and (max-device-width: 1024px) {
+     
+.menu_button{
+ margin-left: 98%;
+}
+
+}
+
+/* iPads PRO(portrait and landscape) ----------- */
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1524px) {
+    .menu_button{
+        margin-left: 85%;
+       }
+}
+/* .icon-box {
+    display: flex;
+}
+
+.icon-box.icon_top {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-box.icon_top.big_icon .box-content {
+    line-height: 24px;
+}
+
+.box-phone {
+    color: #7f7f7f;
+}
+
+.box-email .email-text {
+    color: #f4f4f5;
+}
+
+.box-address {
+    color: #7f7f7f;
+}
+
+.icon-box.icon_top.big_icon img {
+    height: 120px;
+    max-width: 100%;
+} */
+
+/* .icon-box .box_icon {
+    font-size: 25px;
+} */
+
+
+/* Scroll Up Button
+=================*/
+
+.topNubex {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    color: orange;
+    animation: pulse 1.2s ease infinite;
+}
+

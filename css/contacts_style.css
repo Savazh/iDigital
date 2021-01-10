@@ -1,0 +1,466 @@
+h1 {
+    color: brown;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    display:flex;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: ghostwhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+/* Page
+=================*/
+
+.page {
+    width: 100%;
+    height: 50px;
+    min-width: 770px;
+    /*Зона видимости  1 экран */
+    position: relative;
+    /* overflow: hidden; */
+    background: url(../img/img_1.jpg) center,
+        no-repeat;
+    background-size: cover;
+}
+
+
+/* Header
+=================*/
+
+.header {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    /* padding: 10px 16px; */
+
+}
+
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+.company_logo {
+    margin-left: 1%;
+    float: left;
+    padding: 0px 16px;
+}
+
+.company_name {
+    float: left;
+    padding: 14px 16px;
+}
+
+.menu_button {
+    padding-top: 1%;
+}
+
+
+/* Right-Sided Navigation
+=================*/
+
+/* Clearfix (clear floats) */
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: ghostwhite;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    display: block;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu_button {
+    margin-left: 95%;
+    top: 0px;
+    position: absolute;
+}
+
+
+/* Breadcrumbs
+=================*/
+
+.breadcrumbs_container {
+    display: flex;
+    align-content: center;
+    position: relative;
+    background: url(../img/breadcrumbs.jpg) no-repeat center / cover;
+    clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 100% 75%, 100% 0%);
+}
+
+.breadcrumbs_row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 2%;
+    margin: auto;
+    min-height: 150px;
+    justify-content: space-around;
+}
+
+.breadcrumbs-title {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+    text-transform: none;
+    word-wrap: break-word;
+    line-height: 1;
+} 
+
+.breadcrumb {
+    display: flex; 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    flex-flow: row wrap;    
+    justify-content: space-evenly;
+    margin: 5px 0 10px 0;
+    padding: 0;
+    background-color: transparent;
+    color: #1f2732;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.first-item {
+    display: flex;
+    /* padding-left: -110%; */
+}
+
+.last-item {
+    display: flex;
+    /* margin-left: 20%; */
+}
+
+
+/* Block_1
+=================*/
+
+.block_1_container {
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-color: ghostwhite;
+    background-size: cover;
+    padding-top: 2%;
+}
+
+.block_1_container {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block_1_row::after {
+    content: "";
+    clear: both;
+    display: table;
+    justify-content: space-around;
+    background-color: transparent !important;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .block_3_column {
+        width: 100%;
+    }
+}
+
+.block_1_icon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    float: left;
+    width: 25%;
+    /* padding: 2%; */
+    margin-top: 0;
+    margin-left: 5%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.box_header {
+    font-weight: 500;
+    line-height: 2;
+    color: #1f2732;
+}
+
+.box_text {
+    font-weight: 300;
+    line-height: 2;
+    font-size: 12pt;
+}
+
+.teaser_icon_wrap {
+    color: ghostwhite;
+    margin: auto;
+}
+
+/* Block_2
+=================*/
+
+/* .block_2_header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    background-color: ghostwhite;
+    min-height: 100px;
+    float: center;
+    padding-top: 3%;
+} */
+
+
+.block_2_wrapper {
+    width: 100%;
+    height: 600px;
+    background-color: ghostwhite;
+    padding-top: 2%;
+}
+
+.block_2_container {
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #3AAFAB;
+    color: ghostwhite;
+    padding: 50px 0;
+    padding-top: 3%;
+}
+
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner {
+    padding: 0 8px;
+}
+
+.flex-outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+    flex: 1 0 220px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: ghostwhite;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+
+/* Block_4 Google Maps
+=================*/
+
+.map_responsive{
+    /* overflow: hidden; */
+    padding-bottom: 35%;
+    position: relative;
+    height: 0;
+    margin-top: 10%;
+}
+
+.map_responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* Footer
+=================*/
+
+* {
+    box-sizing: border-box;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../img/img_99.jpg) center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.footer_icon_wrap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.email-text, p {
+    color: #666666 !important;
+  }
+  
+  /* Create five equal columns that floats next to each other */
+  .footerColumn {
+    text-align: center;
+    margin-right: 95px;
+  }
+  
+  .footerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footerColumn {
+    text-align: center;
+    margin-right: 75px;
+  
+  }
+
+
+/* Scroll Up Button
+=================*/
+
+.topNubex {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+   }
