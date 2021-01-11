@@ -47,10 +47,14 @@ h4,
 h5,
 h6 {
     margin: 0;
+    display: inline-block;
 }
 
 p {
-    margin: 0 0 10px;
+  margin: 0 0 10px;
+  font-size: 12pt;
+  line-height: 2;
+  display: inline-block;
 }
 
 .container {
@@ -219,14 +223,15 @@ p {
 }
 
 .phone_navbar {
-    color: ghostwhite;
-    font-weight: 500;
-    padding-left: 50px;
-    padding-top: 25%;
+  color: ghostwhite;
+  font-weight: 500;
+  font-size: 14pt;
+  padding-left: 40px;
+  padding-top: 25%;
 }
 
 .phone_highlight {
-    color: #ff497c !important;
+  color: #ff497c !important;
 }
 
 
@@ -279,7 +284,7 @@ p {
     font-weight: 600;
     line-height: 40px;
     text-transform: uppercase;
-    }
+}
 
 .first-item {
     display: flex;
@@ -302,12 +307,17 @@ p {
     padding-top: 50px;
 }
 
+.headerHighlight {
+  font-size: 36pt;
+  margin-right: 10px;
+  color: red;
+}
+
 div.block1Text1 {
-    /* background-color: lightgrey; */
     padding: 20px;
   }
   
-  @media screen and (min-width: 601px) {
+  /* @media screen and (min-width: 601px) {
     div.block1Text1 {
       font-size: 24pt;
     }
@@ -329,7 +339,7 @@ div.block1Text1 {
     div.block1Text2 {
       font-size: 8pt;
     }
-  }
+  } */
 
 
 /* Block_2
@@ -379,18 +389,18 @@ div.block1Text1 {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .block2Column  {
         width: 50%;
     }
-}
+} */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .block2Column  {
         width: 100%;
     }
-}
+} */
 
 
 /* Block_3
@@ -404,6 +414,14 @@ div.block1Text1 {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
+}
+
+.textHighlight {
+  font-weight: bold;
+  font-size: large;
+  margin-right: 5px;
+  color: red;
 }
 
 /* .block_3_column {
@@ -434,7 +452,7 @@ div.block1Text1 {
     padding-bottom: 35%;
     position: relative;
     height: 0;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .map_responsive iframe{
@@ -468,45 +486,46 @@ div.block1Text1 {
   text-align: center;
 }
 
-.footer_icon_wrap {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-  padding-top: 50px;
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.email-text, p {
+.footer_icon_wrap {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.icon1 {
+  padding-top: 20px;
+}
+
+.email-text {
   color: #666666 !important;
+}
+
+.phoneFoot {
+padding-top: 12px;
 }
 
 /* Create five equal columns that floats next to each other */
 .footerColumn {
   text-align: center;
-  margin-right: 95px;
+  margin-right: 40px;
+  padding-bottom: 30px;
+  padding-top: 80px;
 }
 
-.footerRow{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.footerColumn {
-  text-align: center;
-  margin-right: 75px;
-
-}
-
-/* Clear floats after the columns */
-.footerRow:after {
-  content: "";
-  display: table;
-  clear: both;
+.footerColumn p {
+  color: #666666;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .footerColumn  {
       width: 50%;
   }
@@ -515,10 +534,10 @@ div.block1Text1 {
     margin-left: 620px;
   }
 
-}
+} */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .footerColumn  {
       width: 100%;
   }
@@ -531,7 +550,7 @@ div.block1Text1 {
               padding: 0px !important; 
               margin-top: 0;
             }
-          }
+          } */
 
 
 /* Scroll Up Button
@@ -543,4 +562,156 @@ div.block1Text1 {
   bottom: 45px;
   color: orange;
   animation: pulse 1.2s ease infinite;
+}
+
+
+/* Media
+=======================================================*/
+
+/* Responsive layout - iPad Fucking Pro*/
+@media screen and (max-width: 1366px) {
+  .page{
+    min-width: 1480px;
+}
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 46pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .block2Column  {
+    width: 20%;
+    /* margin-left: 140px; */
+    font-size: 28pt;
+    padding: 15px;
+  }
+  .footerColumn  {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 30px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 93%;
+    padding-top: 25px;
+  }
+}
+
+
+/* Responsive layout - Tablets*/
+@media screen  and (min-width: 601px)
+and (max-width: 900px) {
+  .page{
+      min-width: 1280px;
+  }
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 36pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .block_1_container {
+    font-size: 14pt;
+  }
+  .iconResponsive {
+    margin-top: -82px;
+  }
+  .block2Column  {
+    width: 80%;
+    margin-left: 130px;
+    font-size: 28pt;
+    padding: 5px;
+  }
+  .textResponsive {
+    font-size: 14pt;
+  }
+  .textHighlight {
+    font-size: 14pt;
+  }
+  .block_3_row {
+    width: 80%;
+    padding-top: 50px;
+  }
+  .footerColumn  {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 70px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 93%;
+    padding-top: 25px;
+  }
+}
+
+
+/* Responsive layout - Phones*/
+@media screen and (max-width: 600px) {
+  .page{
+    min-width: 780px;
+}
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 36pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .block_1_container {
+    font-size: 14pt;
+  }
+  .iconResponsive {
+    margin-top: -82px;
+  }
+  .block2Column  {
+    width: 80%;
+    margin-left: 80px;
+    font-size: 36pt;
+    padding: 5px;
+  }
+  .textResponsive {
+    font-size: 16pt;
+  }
+  .textHighlight {
+    font-size: 20pt;
+  }
+  .block_3_row {
+    width: 80%;
+    padding-top: 50px;
+  }
+  .footerRow {
+    display: block;
+}
+  .footerColumn  {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .icon1 {
+    padding-top: 50px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 700px;
+    padding-top: 30px;
+  }
 }

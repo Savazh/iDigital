@@ -14,14 +14,7 @@ a:link {
     text-decoration: none;
     color: #ff0000 ;
 }
-/* a:active {
-    text-decoration: none;
-    color: #ff0000 ;
-} */
-/* a:visited { 
-    text-decoration: none; 
-    color: #1575f3;
-} */
+
 a:hover {
     text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
     color: black; /* Цвет ссылки */
@@ -51,6 +44,13 @@ h6 {
 
 p {
     margin: 0 0 10px;
+    font-size: 13pt;
+    line-height: 2;
+    display: block;
+}
+
+q {
+    font-size: 16pt;
 }
 
 .container {
@@ -84,10 +84,8 @@ p {
     background-color: #1f2732;
     opacity: 90%;
     position: fixed;
-    /* top: -80pt; */
     width: 100%;
     display: block;
-    /* transition: top 0.5s; */
     z-index: 2;
     height: 70pt;
   }
@@ -117,6 +115,7 @@ p {
     position: fixed;
     z-index: 2;
 }
+
 
 /*///////////////////// HUM ////////////////////////////////*/
 
@@ -163,6 +162,7 @@ p {
   .ham6.active .bottom {
     stroke-dashoffset: -132px;
   }
+  
 
 /* Right-Sided Navigation
 =================*/
@@ -213,15 +213,17 @@ p {
   }
   
   .phone_navbar {
-      color: ghostwhite;
-      font-weight: 500;
-      padding-left: 50px;
-      padding-top: 25%;
-  }
+    color: ghostwhite;
+    font-weight: 500;
+    font-size: 14pt;
+    padding-left: 40px;
+    padding-top: 25%;
+}
+
+.phone_highlight {
+    color: #ff497c !important;
+}
   
-  .phone_highlight {
-      color: #ff497c !important;
-  }
 
 
 /* Breadcrumbs
@@ -310,7 +312,7 @@ p {
 }
 
 .block_1_column_2 {
-    float: left;
+    float: right;
     width: 50%;
     padding-left: 5%;
     padding-top: 5%;
@@ -337,6 +339,12 @@ p {
     /* font-weight: 100; */
     font-size: 14pt;
     line-height: 2;
+    text-align: justify;
+}
+
+.textHighlight {
+    color: red;
+    font-size: large;
 }
 
 .block_1_row {
@@ -353,16 +361,23 @@ p {
 .list_1 {
 padding-top: 2%;
 padding-left: 2%;
+margin-left: 50px;
+font-weight: 500;
 }
 
-.ul {
-    list-style-type: circle;
+.headerStyle {
+    margin-left: -20px;
+    padding-bottom: 10px;
+    color: black;
+}
 
+li {
+    list-style-type: disc;
 }
 
 
-/* Block_2
-=================*/
+/* Block_2 - Slideshow Reviews
+==============================*/
 
 * {box-sizing: border-box}
 
@@ -370,12 +385,19 @@ padding-left: 2%;
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
+  padding-top: 20px;
+}
+
+.reviewHeader {
+    text-align: center;
+    font-size: 14;
+    font-weight: 500;
 }
 
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -426,7 +448,6 @@ padding-left: 2%;
   transition: background-color 0.6s ease;
 }
 
-
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
     background-color: #717171;
@@ -434,9 +455,10 @@ padding-left: 2%;
   
   /* Add an italic font style to all quotes */
   q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
   
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
 
 /* Footer
 =================*/
@@ -460,49 +482,43 @@ padding-left: 2%;
     text-align: center;
 }
 
-.footer_icon_wrap {
-    display: block;
+.footerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer_icon_wrap {
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-.email-text, p {
+.icon1 {
+    padding-top: 20px;
+}
+
+.email-text {
     color: #666666 !important;
   }
+
+  .phoneFoot {
+  padding-top: 15px;
+}
   
   /* Create five equal columns that floats next to each other */
   .footerColumn {
     text-align: center;
-    margin-right: 95px;
-  }
-  
-  .footerRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .footerColumn {
-    text-align: center;
-    margin-right: 75px;
-  
+    margin-right: 40px;
+    padding-bottom: 30px;
+    padding-top: 80px;
   }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .footerColumn  {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .footerColumn  {
-        width: 100%;
-    }
-}
+  .footerColumn p {
+    color: #666666;
+  }
 
 
 /* Scroll Up Button
@@ -515,3 +531,150 @@ padding-left: 2%;
     color: orange;
     animation: pulse 1.2s ease infinite;
 }
+
+
+/* Media
+=======================================================*/
+
+
+/* Responsive layout - iPad Fucking Pro*/
+@media screen and (max-width: 1366px) {
+    .page{
+        min-width: 1380px;
+    }
+    .breadcrumbs_row  {
+        height: 150px;
+    }
+    .breadcrumbs_title {
+        font-size: 36pt;
+        line-height: 0.3; 
+        text-align: center;   
+    }
+
+    .block_1_column_1  {
+        width: 95%;
+    }
+    .block_1_column_2  {
+        width: 100%;
+        padding-left: 75px;
+    }
+    .block_1_column_3  {
+        width: 100%;
+    }
+    .block_1_row {
+      width: 100%;
+    }
+    .block_1_header {
+        text-align: center;
+    }
+    .footer {
+        width: 100%;
+        }
+      .phoneFoot {
+          padding-top: 12px;
+        }
+       .menu_button{
+          margin-left: 93%;
+          padding-top: 25px;
+        }
+}
+
+/* Responsive layout - Tablets*/
+@media screen  and (min-width: 601px)
+and (max-width: 900px) {
+  .page{
+      min-width: 1280px;
+  }
+    .breadcrumbs_row  {
+        height: 150px;
+    }
+    .breadcrumbs_title {
+        font-size: 36pt;
+        line-height: 0.3; 
+        text-align: center;   
+    }
+
+    .block_1_column_1  {
+        width: 95%;
+    }
+    .block_1_column_2  {
+        width: 100%;
+        padding-left: 75px;
+    }
+    .block_1_column_3  {
+        width: 100%;
+    }
+    .block_1_row {
+      width: 100%;
+    }
+    .block_1_header {
+        text-align: center;
+    }
+    .footerColumn  {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+        padding-bottom: 10px;
+      }
+      .icon1 {
+        padding-top: 65px;
+      }
+      .footer {
+        height: 100%;
+      }
+      .menu_button{
+        margin-left: 93%;
+        padding-top: 25px;
+      }
+}
+
+/* Responsive layout - Phones*/
+@media screen and (max-width: 600px) {
+    .page{
+        min-width: 780px;
+    }
+    .breadcrumbs_row  {
+        height: 150px;
+    }
+    .breadcrumbs_title {
+        font-size: 28pt;
+        line-height: 0.3;    
+    }
+
+    .block_1_column_1  {
+        width: 95%;
+    }
+    .block_1_column_2  {
+        width: 100%;
+        padding-left: 75px;
+    }
+    .block_1_column_3  {
+        width: 100%;
+    }
+    .block_1_row {
+      width: 100%;
+    }
+    .block_1_header {
+        text-align: center;
+    }
+    .footerRow {
+        display: block;
+    }
+    .footerColumn  {
+      width: 100%;
+      padding: 0px;
+      padding-bottom: 20px;
+    }
+    .icon1 {
+      padding-top: 50px;
+    }
+    .footer {
+      height: 100%;
+    }
+    .menu_button{
+        margin-left: 700px;
+        padding-top: 30px;
+      }
+}
+
+

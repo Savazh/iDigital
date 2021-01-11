@@ -76,8 +76,8 @@ q {
     /*Зона видимости  1 экран */
     position: relative;
     /* overflow: hidden; */
-    background: url(../img/img_1.jpg) center,
-    no-repeat;
+    /* background: url(../img/img_1.jpg) center,
+    no-repeat; */
     background-size: cover;
 }
 
@@ -168,6 +168,7 @@ q {
   .ham6.active .bottom {
     stroke-dashoffset: -132px;
   }
+
 
 /* Right-Sided Navigation
 =================*/
@@ -309,13 +310,16 @@ img {
     margin-right: auto;
 }
 
+.imgResponsive {
+    width: 50%;
+  }
+
 .block_1_text {
     display: block;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;  
     width: 50%;
-    /* background-color: #f1f1f1f1; */
     padding-bottom: 50px;
 }
 
@@ -348,6 +352,8 @@ img {
   display: none;
   padding: 30px;
   text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* Next & previous buttons */
@@ -398,9 +404,9 @@ img {
 }
 
 /* Add a background color to the active dot/circle */
-/* .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  } */
+  }
   
   /* Add an italic font style to all quotes */
   q {font-style: italic;}
@@ -431,111 +437,47 @@ img {
     text-align: center;
 }
 
-.footer_icon_wrap {
-    display: block;
+.footerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer_icon_wrap {
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-.email-text, p {
+.icon1 {
+    padding-top: 20px;
+}
+
+.email-text {
     color: #666666 !important;
   }
+
+  .phoneFoot {
+  padding-top: 12px;
+}
   
   /* Create five equal columns that floats next to each other */
   .footerColumn {
     text-align: center;
-    margin-right: 95px;
-  }
-  
-  .footerRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .footerColumn {
-    text-align: center;
-    margin-right: 75px;
-  
+    margin-right: 40px;
+    padding-bottom: 30px;
+    padding-top: 80px;
   }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .footerColumn  {
-        width: 50%;
-    }
-    .menu_button{
-        margin-left: 620px;
-      }
-}
+  .footerColumn p {
+    color: #666666;
+  }
+  
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .footerColumn  {
-        width: 100%;
-    }
-    .menu_button{
-        margin-left: 620px;
-      }
 
-}
- /* iPads (portrait and landscape) ----------- */
 
- @media only screen
- and (min-device-width: 600px)
- and (max-device-width: 1024px) {
-     
-.menu_button{
- margin-left: 98%;
-}
-
-}
-
-/* iPads PRO(portrait and landscape) ----------- */
-
-@media only screen
-and (min-device-width: 1024px)
-and (max-device-width: 1524px) {
-    .menu_button{
-        margin-left: 85%;
-       }
-}
-/* .icon-box {
-    display: flex;
-}
-
-.icon-box.icon_top {
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.icon-box.icon_top.big_icon .box-content {
-    line-height: 24px;
-}
-
-.box-phone {
-    color: #7f7f7f;
-}
-
-.box-email .email-text {
-    color: #f4f4f5;
-}
-
-.box-address {
-    color: #7f7f7f;
-}
-
-.icon-box.icon_top.big_icon img {
-    height: 120px;
-    max-width: 100%;
-} */
-
-/* .icon-box .box_icon {
-    font-size: 25px;
-} */
 
 
 /* Scroll Up Button
@@ -548,4 +490,114 @@ and (max-device-width: 1524px) {
     color: orange;
     animation: pulse 1.2s ease infinite;
 }
+
+
+/* Responsive layout - iPad Fucking Pro*/
+@media screen and (max-width: 1366px) {
+    .page{
+        min-width: 1380px;
+    }
+    p {
+        font-size: 18pt;
+    }
+    .breadcrumbs_row  {
+      height: 150px;
+    }
+    .breadcrumbs_title {
+      font-size: 36pt;
+      line-height: 0.3; 
+      text-align: center;   
+    }
+    .block_1_text  {
+      width: 80%;
+      font-size: 36pt;
+    }
+    .imgResponsive {
+      width: 80%;
+    }
+    .footer {
+      width: 100%;
+      }
+    .phoneFoot {
+        padding-top: 12px;
+      }
+     .menu_button{
+        margin-left: 93%;
+        padding-top: 25px;
+      }
+  }
+  
+  /* Responsive layout - Tablets*/
+  @media screen  and (min-width: 601px)
+  and (max-width: 900px) {
+    .page{
+        min-width: 1380px;
+    }
+    .breadcrumbs_row  {
+      height: 150px;
+    }
+    .breadcrumbs_title {
+      font-size: 36pt;
+      line-height: 0.3; 
+      text-align: center;   
+    }
+    .block_1_text  {
+      width: 80%;
+    }
+    .imgResponsive {
+      width: 80%;
+    }
+    .footerColumn  {
+      width: 100%;
+      margin-left: 15px;
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+    .icon1 {
+        padding-top: 60px;
+    }
+    .phoneFoot {
+        padding-top: 12px;
+      }
+    .menu_button{
+        margin-left: 93%;
+        padding-top: 25px;
+      }
+  }
+  
+  /* Responsive layout - Phones*/
+  @media screen and (max-width: 600px) {
+    .page{
+        min-width: 780px;
+    }
+    .breadcrumbs_row  {
+      height: 150px;
+    }
+    .breadcrumbs_title {
+      font-size: 36pt;
+      line-height: 0.3; 
+      text-align: center;   
+    }
+    .block_1_text {
+      width: 80%;
+    }
+    .imgResponsive {
+      width: 80%;
+    }
+    .footerRow {
+        display: block;
+    }
+    .footerColumn  {
+      width: 100%;
+      padding: 0px;
+      padding-bottom: 20px;
+    }
+    .footer {
+      height: 100%;
+    }
+    .menu_button{
+        margin-left: 700px;
+        padding-top: 30px;
+      }
+  }
 

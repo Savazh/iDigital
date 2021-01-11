@@ -52,6 +52,7 @@ h6 {
 
 p {
     margin: 0 0 10px;
+    display: inline-block;
 }
 
 .container {
@@ -221,15 +222,17 @@ p {
 }
 
 .phone_navbar {
-    color: ghostwhite;
-    font-weight: 500;
-    padding-left: 50px;
-    padding-top: 25%;
+  color: ghostwhite;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-top: 100px;
+  font-size: 14pt;
 }
 
 .phone_highlight {
-    color: #ff497c !important;
+  color: #ff497c !important;
 }
+
 
 
 /* Breadcrumbs
@@ -374,7 +377,6 @@ h1 {
   background-color: transparent;
   cursor: pointer;
   font-size: 9pt;
-  /* font-style: normal; */
   font-weight: 750;
   text-transform: uppercase;
 }
@@ -396,116 +398,61 @@ h1 {
 =================*/
 
 * {
-    box-sizing: border-box;
-  }
-  
-  .footer {
-    left: 0;
-    bottom: 0;
-    width: 100% !important;
-    height: 400px;
-    background: url(../img/img_99.jpg) center;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: ghostwhite;
-    text-align: center;
-  }
-  
-  .footer_icon_wrap {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-    padding-top: 50px;
-  }
-  
-  .email-text, p {
-    color: #666666 !important;
-  }
-  
-  /* Create five equal columns that floats next to each other */
-  .footerColumn {
-    text-align: center;
-    margin-right: 95px;
-  }
-  
-  .footerRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .footerColumn {
-    text-align: center;
-    margin-right: 75px;
-  
-  }
+  box-sizing: border-box;
+}
 
-  .footer{
-      width: 790px;
-  }
-  
-  /* Clear floats after the columns */
-  .footerRow:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media only screen
-  and (min-device-width: 600px)
-  and (max-device-width: 900px) {
-    .footerColumn  {
-        width: 50%;
-        margin-left: -15px;
-    }
-  
-    .menu_button{
-      margin-left: 620px;
-    }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background: url(../img/img_99.jpg) center;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: ghostwhite;
+  text-align: center;
+}
 
-    .page {
-      height: 50px;
-      
-      /*Зона видимости  1 экран */
-      position: relative;
-  }
-  
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .footerColumn  {
-        width: 100%;
-        margin-left: -15px;
-    }
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .page {
-      width: 100%;
-      height: 50px;
-      min-width: 680px !important;
-      /*Зона видимости  1 экран */
-      position: relative;
-  }
+.footer_icon_wrap {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
 
-    .footer {
-      left: 0;
-      bottom: 0;
-      height: 400px;
-      background: url(../img/img_99.jpg) center;
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: ghostwhite;
-      text-align: center;
-    }
-  }
+.icon1 {
+  padding-top: 20px;
+}
+
+.email-text {
+  color: #666666 !important;
+}
+
+.phoneFoot {
+padding-top: 12px;
+}
+
+/* Create five equal columns that floats next to each other */
+.footerColumn {
+  text-align: center;
+  margin-right: 40px;
+  padding-bottom: 30px;
+  padding-top: 80px;
+}
+
+.footerColumn p {
+  color: #666666;
+}
   
 
 /* Scroll Up Button
@@ -517,4 +464,161 @@ h1 {
     bottom: 45px;
     color: orange;
     animation: pulse 1.2s ease infinite;
+}
+
+
+
+/* Media
+=======================================================*/
+
+/* Responsive layout - iPad Fucking Pro*/
+@media screen and (max-width: 1366px) {
+  .page{
+    min-width: 1480px;
+}
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 46pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .main {
+    width: 95%;
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 38px;
+  }
+  .btn {
+    padding: 15px 10px;
+    font-size: 14pt;
+  }
+  p {
+    font-size: 14pt;
+}
+  a {
+    font-size: 20pt;
+  }
+  .footerColumn  {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 30px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 93%;
+    padding-top: 25px;
+  }
+}
+
+
+/* Responsive layout - Tablets*/
+@media screen  and (min-width: 601px)
+and (max-width: 900px) {
+  .page{
+      min-width: 1280px;
+  }
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 36pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .main {
+    width: 95%;
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .btn {
+    padding: 15px 10px;
+    font-size: 16pt;
+  }
+  p {
+    font-size: 16pt;
+}
+  a {
+    font-size: 20pt;
+  }
+  .footerColumn  {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 50px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 93%;
+    padding-top: 25px;
+  }
+}
+
+
+/* Responsive layout - Phones*/
+@media screen and (max-width: 600px) {
+  .page{
+    min-width: 780px;
+}
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 36pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .main {
+    width: 95%;
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .content {
+    height: 340px;
+  }
+  .btn {
+    padding: 15px 10px;
+    font-size: 12pt;
+  }
+  p {
+    font-size: 12pt;
+}
+  a {
+    font-size: 14pt;
+  }
+  .footerRow {
+    display: block;
+}
+.footerColumn  {
+  width: 100%;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+.icon1 {
+  padding-top: 50px;
+}
+.footer {
+  height: 100%;
+}
+.menu_button{
+    margin-left: 700px;
+    padding-top: 30px;
+  }
 }

@@ -74,7 +74,8 @@ h6 {
 
 p {
     margin: 0 0 10px;
-}
+    display: block;
+  }
 
 .container {
     width: 100%;
@@ -284,15 +285,16 @@ p {
 }
 
 .phone_navbar {
-    color: ghostwhite;
-    font-weight: 500;
-    padding-left: 50px;
-    padding-top: 100px;
-    line-height: 8;
+  color: ghostwhite;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-top: 100px;
+  line-height: 8;
+  font-size: 14pt;
 }
 
 .phone_highlight {
-    color: #ff497c !important;
+  color: #ff497c !important;
 }
 
 
@@ -365,8 +367,8 @@ p {
     flex-direction: column nowrap;
     width: 100%;
     height: auto;   
-    padding-top: 2%;
-}
+    padding-top: 20px;
+    padding-bottom: 100px;}
 
 .block_1_container {
     padding-right: 5%;
@@ -388,22 +390,14 @@ p {
     background-color: transparent !important;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-    .block_3_column {
-        width: 100%;
-    }
-}
-
 .block_1_icon {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     float: left;
     width: 25%;
-    /* padding: 2%; */
     margin-top: 0;
-    margin-left: 5%;
+    margin-left: 6%;
     text-align: center;
     vertical-align: middle;
 
@@ -420,6 +414,7 @@ p {
     font-weight: 300;
     line-height: 2;
     font-size: 12pt;
+    font-style: inherit;
 }
 
 .teaser_icon_wrap {
@@ -549,61 +544,43 @@ p {
   text-align: center;
 }
 
-.footer_icon_wrap {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-  padding-top: 50px;
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.email-text, p {
+.footer_icon_wrap {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.icon1 {
+  padding-top: 20px;
+}
+
+.email-text {
   color: #666666 !important;
+}
+
+.phoneFoot {
+padding-top: 15px;
 }
 
 /* Create five equal columns that floats next to each other */
 .footerColumn {
   text-align: center;
-  margin-right: 95px;
+  margin-right: 40px;
+  padding-bottom: 30px;
+  padding-top: 80px;
 }
 
-.footerRow{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.footerColumn p {
+  color: #666666;
 }
-
-.footerColumn {
-  text-align: center;
-  margin-right: 75px;
-
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .footerColumn  {
-      width: 50%;
-  }
-
-  .menu_button{
-    margin-left: 620px;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .footerColumn  {
-      width: 100%;
-  }
-}
-
-@media screen and (max-width: 810px){
-  .block_1_container{
-    padding: 0px !important; 
-    float: center;
-  }
-}
-
 
 
 /* Scroll Up Button
@@ -617,20 +594,146 @@ p {
   animation: pulse 1.2s ease infinite;
  }
 
- @media (max-width:500px){
-  .block_1_row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
+
+ /* Media
+=======================================================*/
+
+/* Responsive layout - iPad Fucking Pro*/
+@media screen and (max-width: 1366) {
+  .page{
+    min-width: 1480px;
+}
+  .breadcrumbs_row  {
+    height: 150px;
   }
-
-
-
-  .footerRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .breadcrumbs_title {
+    font-size: 46pt;
+    line-height: 0.3; 
+    text-align: center;   
   }
+  .block_1_icon {
+    width: 26%;
+  }
+  .footerColumn  {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 30px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 93%;
+    padding-top: 25px;
+  }
+}
 
- }
+/* Responsive layout - Tablets*/
+@media screen and (max-width: 1024px) {
+  .page{
+    min-width: 1280px;
+}
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 46pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .block_1_icon {
+    width: 40%;
+  }
+  .footerColumn  {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 30px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 93%;
+    padding-top: 25px;
+  }
+}
+
+/* Responsive layout - Tablets*/
+@media screen  and (min-width: 601px)
+and (max-width: 900px) {
+  .page{
+      min-width: 1280px;
+  }
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 36pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .block_1_icon {
+    width: 40%;
+  }
+  .footerColumn  {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 50px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 93%;
+    padding-top: 25px;
+  }
+}
+
+/* Responsive layout - Phones*/
+@media screen and (max-width: 600px) {
+  .page{
+    min-width: 780px;
+}
+  .breadcrumbs_row  {
+    height: 150px;
+  }
+  .breadcrumbs_title {
+    font-size: 36pt;
+    line-height: 0.3; 
+    text-align: center;   
+  }
+  .block_1_icon {
+    width: 40%;
+  }
+  .footerRow {
+    display: block;
+}
+  .footerColumn  {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .icon1 {
+    padding-top: 50px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_button{
+    margin-left: 700px;
+    padding-top: 30px;
+  }
+}
