@@ -492,6 +492,9 @@ img {
 }
 
 
+/* Media
+=======================================================*/
+
 /* Responsive layout - iPad Fucking Pro*/
 @media screen and (max-width: 1366px) {
     .page{
