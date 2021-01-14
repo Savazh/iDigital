@@ -74,12 +74,8 @@ p {
 .page {
   width: 100%;
   height: 500px;
-  /* min-width: 770px; */
   /*Зона видимости  1 экран */
   position: relative;
-  /* overflow: hidden; */
-  /* background: url(../img/img_1.jpg) center,
-      no-repeat; */
   background-size: cover;
 }
 
@@ -266,16 +262,6 @@ margin: auto;
 background-color: ghostwhite;
 }
 
-/* Caption text */
-/* .text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
-} */
 
 /* The dots/bullets/indicators */
 .dot {
@@ -318,27 +304,6 @@ to {opacity: 1}
 }
 
 
-
-
-
-
-
-/* .block_1_container {
-  display: flex;
-  background-color: ghostwhite;
-  background: url(../img/img_104.jpg) center, no-repeat;
-  background-size: cover;
-  height: 1000px;
-  justify-content: space-between;
-} */
-
-/* .block_1_logo {
-  position: absolute;
-  left: 200px;
-  z-index: 1;
-  top: 0.5rem;
-} */
-
 .block_1_text {
 position: absolute;
 top: 10px;
@@ -373,26 +338,6 @@ height: 90%;
 /* padding-left: 530px; */
 }
 
-
-/* .block_1_column_left {
-  position: relative;
-  size: 100%;
-  padding-right: 100px;
-  padding-left: 25%;
-  padding-top: 40%;
-}
-
-.block_1_column_right {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  width: 600px;
-  height: 800px;
-  padding-right: 5%;
-  padding-left: 95%;
-  margin-left: 98%;
-  margin-top: -900px;
-} */
 
 
 /* Block_2
@@ -467,25 +412,18 @@ font-size: 14pt;
 .block2Column_right {
 float: left;
 height: 950px;
-
-/* margin-left: 200px; */
 width: 35%;
-/* padding: 100px; */
 background: url(../img/img_88_1.jpg) center, no-repeat;
 background-color: ghostwhite;
 padding-top: 200px;
-/* font-size: 36pt; */
 }
 
 .block2_image {
   position: absolute;
-  /* z-index: 1; */
   width: 800px;
   top: 2;
   left: 1;
   margin-left: -270px;
-  /* padding-right: 400px; */
-  /* padding-top: -500px; */
 }
 
 
@@ -494,20 +432,6 @@ padding-top: 200px;
 content: "";
 display: table;
 clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.block2Column_left {
-    width: 100%;
-}
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.block2Column_right {
-    width: 100%;
-}
 }
 
 
@@ -545,17 +469,6 @@ clear: both;
   font-weight: 500;
 }
 
-/* @media screen and (min-width: 601px) {
-  .block3Header {
-    font-size: 80px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .block3Header {
-    font-size: 30px;
-  }
-} */
 
 .block3Column {
   float: left;
@@ -588,12 +501,6 @@ animation: main-rotate 0.5s  linear;
   display: table;
   clear: both;
 }
-
-@media screen and (max-width: 600px) {
-  .block3Column  {
-      width: 100%;
-  }
-} 
 
 
 /* Block_4_Projects
@@ -718,113 +625,13 @@ animation: main-rotate 0.5s  linear;
   clear: both;
 }
 
-/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .block4Column {
-      width: 100%;
-  }
-}
+
 
 
 /* Block_6
 =================================================*/
 
-.block_6_header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%;
-  background-color: ghostwhite;
-  min-height: 100px;
-  float: center;
-  /* padding-top: 3%; */
-}
 
-.block_6_container {
-  box-sizing: border-box;
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #3AAFAB;
-  color: #fff;
-  padding: 50px 0;
-  padding-top: 3%;
-}
-
-.flex-outer,
-.flex-inner {
-  list-style-type: none;
-  padding: 0;
-}
-
-.flex-outer {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.flex-outer li,
-.flex-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.flex-inner {
-  padding: 0 8px;
-}
-
-.flex-outer>li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.flex-outer li label,
-.flex-outer li p {
-  padding: 8px;
-  font-weight: 300;
-  letter-spacing: .09em;
-}
-
-.flex-outer>li>label,
-.flex-outer li p {
-  flex: 1 0 120px;
-  max-width: 220px;
-}
-
-.flex-outer>li>label+*,
-.flex-inner {
-  flex: 1 0 220px;
-}
-
-.flex-outer li p {
-  margin: 0;
-}
-
-.flex-outer li button {
-  margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #333;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  letter-spacing: .09em;
-  border-radius: 2px;
-}
-
-.flex-inner li {
-  width: 100px;
-}
-
-.block_6_wrapper {
-  width: 100%;
-  height: 600px;
-  background-color: white;
-}
-
-.label-input100 {
-font-size: 12pt;
-color: black;
-}
 
 
 /* Footer
@@ -909,46 +716,261 @@ animation: pulse 1.2s ease infinite;
 /* Responsive layout - iPad Fucking Pro*/
 @media screen and (max-width: 1366px) {
   .page{
-      min-width: 1380px;
+      min-width: 1420px;
   }
+  .slideshow-container{
+    height: auto;
+    width: max-content;
+  }
+  .block2Row {
+    width: 1320px;
+    margin-top: -100px;
+    }
+    .block2Column_left {
+      float: left;
+      padding-left: 100px;
+      padding-right: 350px;
+      width: 75%;
+      padding-top: 50px;
+      text-align: justify;
+    }
+    .block2Column_right {
+      float: left;
+      height: 900px;
+      width: 25%;
+      background: none;
+      padding-top: 150px;
+    }
+    .block2_image {
+      width: 650px;
+      margin-left: -18%;
+      padding-top: 50px;
+    }
+    .block3Row {
+      width: 1420px;
+      padding-top: 50px;
+      text-align: center;
+    }
+    .block4Row {
+      width: 1420px;
+    }
+    .contentWrapper {
+      height: 300px;
+    }
+    .container-contact100 {
+      width: 1420px;
+    }
+    .footerRow {
+      width: 1420px;
+    }
+    .icon1 {
+      padding-top: 40px;
+    }
+    .footer {
+      height: 100%;
+      width: 1420px;
+    }
+    .menu_button{
+      margin-left: 90%;
+      padding-top: 25px;
+    }
+}
 
-  
-  .footer {
-      width: 100%;
-      }
-    .phoneFoot {
-        padding-top: 12px;
-      }
-     .menu_button{
-        margin-left: 93%;
-        padding-top: 25px;
-      }
+/* Responsive layout - iPad Fucking Pro*/
+@media screen and (max-width: 1024px) {
+  .page{
+      min-width: 1456px;
+  }
+  .slideshow-container{
+    height: auto;
+    width: max-content;
+  }
+  .block2Row {
+    width: 1320px;
+    margin-top: -100px;
+    }
+    .block2Column_left {
+      float: left;
+      padding-left: 100px;
+      padding-right: 350px;
+      width: 75%;
+      padding-top: 50px;
+      text-align: justify;
+    }
+    .block2Column_right {
+      float: left;
+      height: 900px;
+      width: 25%;
+      background: none;
+      padding-top: 150px;
+    }
+    .block2_image {
+      width: 650px;
+      margin-left: -18%;
+      padding-top: 50px;
+    }
+    .block3Row {
+      width: 1456px;
+      padding-top: 50px;
+      text-align: center;
+    }
+    .block3Text p {
+      font-size: 18pt;
+      /* margin-left: -25%; */
+    }
+    .block3Column p {
+      font-size: 13pt;
+    }
+    .block3Column h5 {
+      font-size: 20pt;
+    }
+    .block4Row {
+      width: 1456px;
+    }
+    .contentWrapper {
+      height: 450px;
+    }
+    .block4Text p {
+      font-size: 18pt;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .block4Column h5 {
+      padding-top: 20px;
+      font-size: 20pt;
+      line-height: 1.5;
+    }
+    .block4Column p {
+      font-size: 16pt;
+    }
+    .container-contact100 {
+      width: 1456px;
+    }
+    .footerRow {
+      width: 1456px;
+    }
+    .icon1 {
+      padding-top: 40px;
+    }
+    .footer {
+      height: 100%;
+      width: 1456px;
+    }
+    .menu_button{
+      margin-left: 90%;
+      padding-top: 25px;
+    }
 }
 
 /* Responsive layout - Tablets*/
 @media screen  and (min-width: 601px)
 and (max-width: 900px) {
 .page{
-    min-width: 1280px;
+    min-width: 1290px;
 }
-
-
+  .slideshow-container{
+    height: auto;
+    width: max-content;
+    padding-bottom: 10px;
+  }
+  .block2Row {
+    width: 1280px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    }
+    .block2Row p {
+      font-size: x-large;
+    }
+  .block2Column_left {
+    float: left;
+    padding-left: 40px;
+    padding-right: 0px;
+    width: 1050px;
+    margin-top: -200px;
+    text-align: justify;
+    margin-left: 8%;
+    margin-right: 17%;
+  }
+  .block2Column_right {
+    width: 1280px;
+    background: none;
+    background-color: ghostwhite;
+    padding-top: 0px;
+  }
+  .block2_image {
+    width: 1150px;
+    margin-left: 18%;
+    margin-right: 17%;
+    padding-top: 50px;
+  }
+  .block3Row {
+    width: 1290px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .block3Column  {
+    width: 50%;
+  }
+  .block3Text p {
+    font-size: 18pt;
+  }
+  .block3Column p {
+    font-size: 16pt;
+  }
+  .block3Column h5 {
+    font-size: 20pt;
+  }
+  .block4Row {
+    width: 1290px;
+    padding-top: 100px;
+  }
+  .block4Header {
+    width: 100%;
+  }
+  .block4Text p {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18pt;
+  }
+  .block4Column {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 550px;
+  }
+  .contentWrapper {
+    height: 500px;
+  }
+  .block4Column h5 {
+    font-size: 20pt;
+  }
+  .block4Column p {
+    font-size: 16pt;
+  }
+  .container-contact100 {
+    width: 1290px;
+  }
+  .footerRow {
+    width: 1290px;
+  }
   .footerColumn  {
-      width: 100%;
-      margin-left: 0px;
-      padding: 0px;
-      padding-bottom: 10px;
-    }
-    .icon1 {
-      padding-top: 65px;
-    }
-    .footer {
-      height: 100%;
-    }
-    .menu_button{
-      margin-left: 93%;
-      padding-top: 25px;
-    }
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+  }
+  .icon1 {
+    padding-top: 65px;
+  }
+  .footer {
+    height: 100%;
+    width: 1290px;
+  }
+  .menu_button{
+    margin-left: 90%;
+    padding-top: 25px;
+  }
 }
 
 /* Responsive layout - Phones*/
@@ -956,11 +978,94 @@ and (max-width: 900px) {
   .page{
       min-width: 780px;
   }
+  .slideshow-container{
+    height: auto;
+    padding-bottom: 10px;
+  }
   .block2Row {
-width: 100%;
+    width: 780px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    }
+  .block2Column_left {
+    float: left;
+    padding-left: 20px;
+    padding-right: 0px;
+    width: 650px;
+    margin-top: -400px;
+    text-align: justify;
+    margin-left: 8%;
+    margin-right: 17%;
+  }
+  .block2Column_right {
+    width: 780px;
+    background: none;
+    background-color: ghostwhite;
+    padding-top: 0px;
+  }
+  .block2_image {
+    width: 700px;
+    margin-left: 22%;
+    margin-right: 17%;
+    padding-top: 50px;
+  }
+  .block3Row {
+    width: 780px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .block3Column  {
+    width: 100%;
+    font-size: 20pt;
+  }
+  .block3Text p {
+    font-size: 18pt;
+    width: 580px;
+    margin-left: -25%;
+  }
+  .block3Column p {
+    font-size: 16pt;
+  }
+  .block3Column h5 {
+    font-size: 20pt;
+  }
+  .block4Row {
+    width: 780px;
+    padding-top: 100px;
+  }
+  .block4Header {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .block4Text p {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18pt;
+  }
+  .block4Column {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 600px;
+  }
+  .block4Column h5 {
+    font-size: 20pt;
+  }
+  .block4Column p {
+    font-size: 16pt;
+  }
+  .contentWrapper {
+    height: 550px;
+  }
+  .container-contact100 {
+    width: 780px;
+    padding-top: 50px;
   }
   .footerRow {
-      display: block;
+    display: block;
+    width: 780px;
   }
   .footerColumn  {
     width: 100%;
@@ -972,251 +1077,14 @@ width: 100%;
   }
   .footer {
     height: 100%;
+    width: 780px;
   }
   .menu_button{
-      margin-left: 700px;
-      padding-top: 30px;
-    }
+    margin-left: 650px;
+    padding-top: 30px;
+  }
 }
- /* Media
- =============================== */
-            /* Smartphones (portrait and landscape) ----------- */
 
-      /* @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 768px) {
-      .page{
-          min-width: 768px;
-      } */
-  
-      /* .block2_image {
-        position: absolute;
-        width: 800px;
-        top: 2;
-        left: 1;
-        margin-left: -55px;
-    } */
-      /* .slideshow-container{
-          height: auto;
-      } */
-/*   
-      .mySlides .fade{
-          display: none;
-      } */
-      
-        /* .footerRow{
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        } */
-      
-        /* .menu_button{
-          margin-left: 620px;
-        } */
-  
-        /* .footerColumn {
-          text-align: center;
-          margin-right: 95px;
-    
-        } */
-      
-        /* .block2Column_left{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 70px;
-            margin-top: 100px;
-        }
-        
-        .block3Row{
-            width: 100%;
-            padding: 0px;
-        }
-
-        .block3Column{
-          padding: 35px;
-          width: 28%;
-          
-        }
-
-        .block3ColumnStyle{
-          margin-left: 100px;
-          text-align: center;
-        }
-
-        .block3Text, .block4Text{
-            font-size: 20pt;
-        }
-
-        .logofa{
-            font-size: 45pt;
-        }
-        .block3ColumnMainText{
-          font-size: 15pt;
-          margin-left: -12px;
-        }
-
-        .block3ColumnSecText, .block4ColumnSecText{
-          font-size: 15pt;
-
-        }
-
-        .block4Column{
-            width: 50%;
-        }
-      
-        .block4Logo{
-            font-size: 15pt;
-        } */
-
-        /* .email-text{
-            margin-left: -40px;
-            color: #666666;
-        } */
-
-        /* .company_logo {
-          margin-left: 0.5%;
-          float: left;
-          padding-top: 1%;
-          z-index: 3;
-      }
-
-      .company_name{
-          font-size: 20pt;
-          margin-left: 3%;
-      }
-    } */
-
-    /*================================
-        ... правила для планшетов ...
-      */
-         /* iPads (portrait and landscape) ----------- */
-
-          /* @media only screen
-              and (min-device-width: 600px)
-              and (max-device-width: 1024px) {
-
-          .page{
-              min-width: 1980px;
-          }
-      
-          .slideshow-container{
-              height: auto;
-          }
-      
-          .mySlides .fade{
-              display: none;
-          } */
-          
-            /* .footerRow{
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-            } */
-          
-            /* .menu_button{
-              margin-left: 1960px;
-            } */
-  
-      
-            /* .footerColumn {
-              text-align: center;
-              margin-right: 95px;
-        
-            } */
-          
-            /* .block2Column_left{
-                display: flex;
-                float: left;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 40px;
-                margin-top: 100px;
-            }
-            .block2Column_right{
-              display: flex;
-              float: right;
-              margin-left: 100px;
-            }
-
-            .block2Header{
-              text-align: center;
-            }
-            .block2Text1{
-              text-align: center;
-              font-size: 30pt;
-            }
-            .block2Text2{
-              text-align: center;
-              font-size: 25pt;
-            }
-            
-            .block2Text3,.block2Text4{
-              font-size: 20pt;
-            }
-            
-            .block3Row{
-                width: 100%;
-                padding: 0px;
-            }
-  
-            .block3Column{
-              padding: 35px;
-              width: 28%;
-              
-            }
-  
-            .block3ColumnStyle{
-              margin-left: 320px;
-              text-align: center;
-            }
-  
-            .block3Text, .block4Text{
-                font-size: 25pt;
-            }
-  
-            .logofa{
-                font-size: 45pt;
-            }
-            .block3ColumnMainText{
-              font-size: 25pt;
-              margin-left: -12px;
-            }
-  
-            .block3ColumnSecText, .block4ColumnSecText{
-              font-size: 20pt;
-  
-            }
-  
-            .block4Column{
-                width: 50%;
-            }
-
-            .contentWrapper{
-                display: flex;
-
-            }
-            .block4Logo{
-                font-size: 20pt;
-                margin-left: 25px;
-            } */
-  
-            /* .email-text{
-                margin-left: -40px;
-                color: #666666;
-            } */
-  
-            /* .company_logo {
-              margin-left: 1%;
-              float: left;
-              padding-top: 1%;
-              z-index: 3;
-          }
-  
-          .company_name{
-              font-size: 25pt;
-          }
-        } */
 
 
 
