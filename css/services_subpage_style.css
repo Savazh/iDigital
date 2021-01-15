@@ -448,9 +448,9 @@ li {
 }
 
 /* Add a background color to the active dot/circle */
-.active, .dot:hover {
+/* .active, .dot:hover {
     background-color: #717171;
-  }
+  } */
   
   /* Add an italic font style to all quotes */
   q {font-style: italic;}
