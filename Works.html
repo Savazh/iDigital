@@ -29,7 +29,8 @@
         rel="stylesheet">
     <link rel="icon" type="image/png" href="img/cloud-256x256.png">
     <link rel="stylesheet" href="css/works_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/fadeBlock.css">
+    <link rel="stylesheet" media="all" href="css/animate.css">
     <title>Works</title>
 </head>
 
@@ -72,9 +73,9 @@
         </header>
 
         <div class="company_logo">
-            <img src='../img/cloud-256x256.png' width=50px />
+            <img src='img/logo/iDigitalLogo.svg' width=250px />
         </div>
-        <div class="company_name">iDigital Web Studio</div>
+        <!-- <div class="company_name">iDigital Web Studio</div> -->
 
         <!-- Breadcrumbs -->
 
@@ -93,7 +94,7 @@
         <!-- Block_1 -->
 
         <!-- MAIN (Center website) -->
-        <div class="main">
+        <div class="main fadeInUp animated">
 
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -223,6 +224,12 @@
     </div>
 
 
+    <!--===============================================================================================-->
+    <script src="../scripts/wow.min.js"></script>
+    <!--===============================================================================================-->
+    <script>new WOW().init();</script>
+    <!--===============================================================================================-->
+    <script src="../scripts/fadeBlock.js"></script>
     <!--===============================================================================================-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--===============================================================================================-->

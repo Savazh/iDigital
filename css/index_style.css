@@ -98,7 +98,7 @@ p {
 .company_logo {
   margin-left: 1%;
   float: left;
-  /* padding-top: 1%; */
+  padding-top: .5%;
   position: fixed;
   z-index: 3;
 }
@@ -548,6 +548,11 @@ animation: main-rotate 0.5s  linear;
   overflow: hidden; /* Скрываем всё за контуром */
 }
 
+.block4Logo {
+  padding-top: 20px;
+  font-size: 14pt;
+}
+
 /* Контейнер, в котором размещаем изображение */
 .block4Picture {
   width: 100%;
@@ -985,14 +990,14 @@ and (max-width: 900px) {
   .block2Row {
     width: 780px;
     padding-bottom: 10px;
-    padding-top: 10px;
+    /* padding-top: 150px; */
     }
   .block2Column_left {
     float: left;
     padding-left: 20px;
     padding-right: 0px;
     width: 650px;
-    margin-top: -400px;
+    margin-top: -200px;
     text-align: justify;
     margin-left: 8%;
     margin-right: 17%;

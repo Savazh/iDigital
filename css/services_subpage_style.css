@@ -93,7 +93,7 @@ q {
 .company_logo {
     margin-left: 1%;
     float: left;
-    padding-top: 1%;
+    padding-top: .5%;
     position: fixed;
     z-index: 3;
 }
@@ -448,9 +448,9 @@ li {
 }
 
 /* Add a background color to the active dot/circle */
-/* .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  } */
+  }
   
   /* Add an italic font style to all quotes */
   q {font-style: italic;}

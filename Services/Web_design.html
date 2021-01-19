@@ -27,9 +27,9 @@
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="../img/cloud-256x256.png">
     <link rel="stylesheet" href="../css/services_subpage_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/fadeBlock.css">
+    <link rel="stylesheet" media="all" href="../css/animate.css">
     <title>Web Design</title>
 </head>
 
@@ -76,9 +76,9 @@
         </header>
 
         <div class="company_logo">
-            <img src='../img/cloud-256x256.png' width=50px />
+            <img src='../img/logo/iDigitalLogo.svg' width=250px />
         </div>
-        <div class="company_name">iDigital Web Studio</div>
+        <!-- <div class="company_name">iDigital Web Studio</div> -->
 
 
         <!-- Breadcrumbs -->
@@ -104,13 +104,13 @@
 
         <div class="block_1_row">
 
-            <div class="block_1_column_2">
+            <div class="block_1_column_2 fadeInUp animated">
                 <div class="block_1_image">
                     <img src='../img/img_313.jpg' width=100% />
                 </div>
             </div>
 
-            <div class="block_1_column_1">
+            <div class="block_1_column_1 fadeInUp animated">
                 <div class="block_1_header">
                     <h4> It's Not Just Design - It's the Face of Your Company </h4>
                 </div>
@@ -131,7 +131,7 @@
 
         <div class="block_1_row">
             <div class="block_1_column_3">
-                <div class="block_1_text">
+                <div class="block_1_text fadeInUp animated">
                     <p> Leaving your customers satisfied not
                         only with the results they expected but even with some that they didn’t - is the key to
                         developing winning products. We will help you research, prototype and design a product
@@ -145,7 +145,7 @@
                         and which reveals unique features of the brand, it deepens the impression and intensifies the
                         impact, convinces and sells. Also we write scripts and produce promotional videos.</p>
 
-                    <div class="list_1">
+                    <div class="list_1 fadeInUp animated">
                         <h4 class="headerStyle"> iDigital Use Modern Design and Technology for: </h4>
                         <ul>
                             <li> Interface Design </li>
@@ -164,7 +164,7 @@
 
         <!-- Block_2 -->
 
-        <div class="slideshow-container">
+        <div class="slideshow-container fadeInUp animated">
 
             <div class="reviewHeader">What People Say About Us</div>
 
@@ -202,7 +202,7 @@
 
         </div>
 
-        <div class="dot-container">
+        <div class="dot-container fadeInUp animated">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -247,6 +247,12 @@
     </div>
 
 
+    <!--===============================================================================================-->
+    <script src="../scripts/wow.min.js"></script>
+    <!--===============================================================================================-->
+    <script>new WOW().init();</script>
+    <!--===============================================================================================-->
+    <script src="../scripts/fadeBlock.js"></script>
     <!--===============================================================================================-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--===============================================================================================-->

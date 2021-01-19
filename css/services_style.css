@@ -119,11 +119,11 @@ p {
   }
 
 .company_logo {
-    margin-left: 1%;
-    float: left;
-    /* padding-top: 1%; */
-    position: fixed;
-    z-index: 3;
+  margin-left: 1%;
+  float: left;
+  padding-top: .5%;
+  position: fixed;
+  z-index: 3;
 }
 
 .company_name {

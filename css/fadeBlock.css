@@ -1,0 +1,47 @@
+.fadeIn{
+  opacity:0;
+  transition:opacity 1s ease;
+}
+
+.fadeRight{
+  opacity:0;
+  transform: translateX(10%);
+  -webkit-transform:translateX(10%);
+  transition:all 1s ease;
+}
+
+
+.fadeLeft{
+  opacity:0;
+  transform: translateX(-10%);
+  -webkit-transform:translateX(-10%);
+  transition:all 1s ease;
+}
+
+.fadeTop{
+  opacity:0;
+  transform: translateY(-10%);
+  -webkit-transform:translateY(-10%);
+  transition:all 1s ease;
+}
+
+.fadeBottom{
+  opacity:0;
+  transform: translateY(10%);
+  -webkit-transform:translateY(10%);
+  transition:all 1s ease;
+}
+
+.AnimateFadeIn{
+  opacity:1;
+}
+
+.AnimateFade{
+  opacity:1;
+  transform: translateX(0);
+  -webkit-transform:translateX(0);
+}
+
+
+
+

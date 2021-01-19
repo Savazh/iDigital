@@ -102,7 +102,7 @@ p {
 .company_logo {
     margin-left: 1%;
     float: left;
-    padding-top: 1%;
+    padding-top: .5%;
     position: fixed;
     z-index: 3;
 }
