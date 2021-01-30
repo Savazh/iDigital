@@ -129,6 +129,9 @@ q {
     user-select: none;
     z-index: 5;
   }
+.ham.active {
+    background: none;
+}
   .hamRotate.active {
     transform: rotate(45deg);
   }

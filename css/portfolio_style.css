@@ -115,14 +115,13 @@ q {
 }
 
 .menu_button {
-    margin-left: 95%;
+    margin-left: 92%;
     top: -20px;
     padding-top: 1%;
-    color: white;    
+    color: white;
     position: fixed;
     z-index: 2;
 }
-
 /*///////////////////// HUM ////////////////////////////////*/
 
 .ham {
@@ -135,6 +134,9 @@ q {
     user-select: none;
     z-index: 5;
   }
+.ham.active {
+    background: none;
+}
   .hamRotate.active {
     transform: rotate(45deg);
   }
@@ -404,9 +406,9 @@ img {
 }
 
 /* Add a background color to the active dot/circle */
-/* .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  } */
+  }
   
   /* Add an italic font style to all quotes */
   q {font-style: italic;}

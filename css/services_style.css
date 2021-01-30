@@ -600,7 +600,7 @@ padding-top: 15px;
 =======================================================*/
 
 /* Responsive layout - iPad Fucking Pro*/
-@media screen and (max-width: 1366) {
+@media screen and (max-width: 1366px) {
   .page{
     min-width: 1480px;
 }

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7e3b162-9553-4c9e-bcb1-3cae4409e68c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Works.html" beforeDir="false" afterPath="$PROJECT_DIR$/Works.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/portfolio_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/portfolio_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/services_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/services_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/services_subpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/services_subpage_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg_2-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cloud-256x256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/home3_alt_half_media3-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_108-1170x780.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_108-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_109-1170x780.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_109-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_110-1170x780.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_110-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_111-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_203.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_204.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_205.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_206.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_207.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_208.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_209.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_210.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_211.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_8-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_88_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_89-670x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_9-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_90-670x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_91-670x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_92-670x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_93-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_93-670x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_94-1170x780.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_94-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_94-670x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_96-1170x780.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_96-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_96-670x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_98-1170x780.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_98-600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_99_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nXqR17qGutxMiRN2RN2mb8ND7N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Web-Design\_portfolio\iDigital" />
+      <recent name="E:\Web-Design\_portfolio\iDigital\scripts" />
+      <recent name="E:\Web-Design\_portfolio\iDigital\img" />
+      <recent name="E:\Web-Design\_portfolio\iDigital\css" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7e3b162-9553-4c9e-bcb1-3cae4409e68c" name="Default Changelist" comment="" />
+      <created>1611546771860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611546771860</updated>
+      <workItem from="1611546777731" duration="1188000" />
+      <workItem from="1611548193491" duration="562000" />
+      <workItem from="1611548776228" duration="4701000" />
+      <workItem from="1611621160279" duration="11613000" />
+      <workItem from="1611721689612" duration="5016000" />
+      <workItem from="1611799500194" duration="6041000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
