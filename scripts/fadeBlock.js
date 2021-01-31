@@ -8,7 +8,7 @@ class Options {
 }
 
 
-const fadeOptions = new Options(1, 100, false);
+const fadeOptions = new Options(1, 50, false);
 
 
 
