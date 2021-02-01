@@ -23,29 +23,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactFrom_v6/Contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/ContactFrom_v6/Contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactFrom_v6/images/icons/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Activebox.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Activebox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Bookstore.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Bookstore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Enlight.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Enlight.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Finmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Finmap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Instatech.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Instatech.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Lost_Shirt.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Lost_Shirt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Pullr.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Pullr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Telebot.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Telebot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Vivis_organics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Vivis_organics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Branding.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Branding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Development.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Ecommerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ecommerce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Marketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Marketing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/SEO_optimization.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/SEO_optimization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Web_design.html" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Web_design.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Works.html" beforeDir="false" afterPath="$PROJECT_DIR$/Works.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo/iDigitalLogo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo/iDigitalLogo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo/favicon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/others/Contacts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/fadeBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/fadeBlock.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +82,8 @@
       <workItem from="1611721689612" duration="5016000" />
       <workItem from="1611799500194" duration="6041000" />
       <workItem from="1612064365607" duration="9969000" />
+      <workItem from="1612137977795" duration="1662000" />
+      <workItem from="1612144903900" duration="3108000" />
     </task>
     <servers />
   </component>

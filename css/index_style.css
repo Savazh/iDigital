@@ -749,7 +749,7 @@ body {
     font-weight: 500;
 }
 
-.block2Text3 p {
+.block2Text3 a {
     font-size: 16pt;
     font-weight: 600;
     color: red;
@@ -917,7 +917,7 @@ body {
 
 .block4Logo {
     padding-top: 20px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
     font-size: 16pt;
     font-weight: 600;
 }
