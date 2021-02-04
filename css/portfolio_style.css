@@ -27,11 +27,6 @@ a:hover {
     color: black; /* Цвет ссылки */
    } 
 
-
-html {
-    font-size: 30px;
-}
-
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -49,9 +44,19 @@ h6 {
     margin: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    /*overflow: hidden;*/
+    height: 100vh;
+}
+
 p {
     margin: 0 0 10px;
-    font-size: 14pt;
+    display: inline-block;
 }
 
 q {
@@ -325,6 +330,14 @@ img {
     padding-bottom: 50px;
 }
 
+.block_1_text h5 {
+    font-size: 24pt;
+}
+
+.block_1_text p {
+    font-size: 14pt;
+}
+
 .portfolioLink {
     font-size: 14pt;
 }
@@ -345,8 +358,8 @@ img {
 
 .reviewHeader {
     text-align: center;
-    font-size: 14;
     font-weight: 500;
+    font-size: 24pt;
 }
 
 /* Slides */
@@ -414,7 +427,10 @@ img {
   q {font-style: italic;}
   
   /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+  .author {
+      font-size: 14pt;
+      color: cornflowerblue;
+  }
 
 
 /* Footer
@@ -432,54 +448,53 @@ img {
     background: url(../img/img_99.jpg) center;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
     color: ghostwhite;
     text-align: center;
 }
 
-.footerRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.footerRow {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
 
-  .footer_icon_wrap {
-    /* display: block; */
-    margin-left: auto;
-    margin-right: auto;
+.footerRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footerColumn {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    padding-top: 10vh;
+}
+
+.footer_icon_wrap {
     padding-bottom: 20px;
 }
 
-.icon1 {
-    padding-top: 20px;
+.footerColumn p {
+    color: #666666;
+    font-size: 14pt;
+    font-weight: 500;
 }
 
 .email-text {
+    font-size: 14pt;
     color: #666666 !important;
-  }
-
-  .phoneFoot {
-  padding-top: 12px;
+    font-weight: 500;
 }
-  
-  /* Create five equal columns that floats next to each other */
-  .footerColumn {
-    text-align: center;
-    margin-right: 40px;
-    padding-bottom: 30px;
-    padding-top: 80px;
-  }
 
-  .footerColumn p {
-    color: #666666;
-  }
-  
-
-
-
+@supports (-webkit-overflow-scrolling: touch) {
+    .footer {
+        background-attachment: scroll;
+    }
+}
 
 
 /* Scroll Up Button
@@ -521,11 +536,13 @@ img {
       width: 80%;
     }
     .footer {
-      width: 100%;
-      }
-    .phoneFoot {
-        padding-top: 12px;
-      }
+        height: 100%;
+    }
+    .footerRow {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
      .menu_button{
         margin-left: 93%;
         padding-top: 25px;
@@ -552,17 +569,13 @@ img {
     .imgResponsive {
       width: 80%;
     }
-    .footerColumn  {
-      width: 100%;
-      margin-left: 15px;
-      padding-top: 50px;
-      padding-bottom: 10px;
-    }
-    .icon1 {
-        padding-top: 60px;
-    }
-    .phoneFoot {
-        padding-top: 12px;
+      .footer {
+          height: 100%;
+      }
+      .footerRow {
+          width: 100%;
+          padding-left: 5%;
+          padding-right: 5%;
       }
     .menu_button{
         margin-left: 93%;
@@ -589,17 +602,20 @@ img {
     .imgResponsive {
       width: 80%;
     }
-    .footerRow {
-        display: block;
-    }
-    .footerColumn  {
-      width: 100%;
-      padding: 0px;
-      padding-bottom: 20px;
-    }
-    .footer {
-      height: 100%;
-    }
+      .footer {
+          height: 100%;
+      }
+
+      .footerRow {
+          width: 100%;
+          display: block;
+      }
+
+      .footerColumn {
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
     .menu_button{
         margin-left: 700px;
         padding-top: 30px;

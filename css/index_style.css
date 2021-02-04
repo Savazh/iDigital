@@ -334,7 +334,7 @@ body {
 /* line 128, D:/WEB/Projects/Slider/assets/scss/style.scss */
 #info .slider-title-wrapper {
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     left: calc(100% - 3rem);
     transform-origin: 0% 0%;
     transform: rotate(90deg);
@@ -773,18 +773,6 @@ body {
     font-size: 14pt;
 }
 
-/*.block_2_text {*/
-/*  !* font-weight: 100; *!*/
-/*  font-size: 14pt;*/
-/*  line-height: 2;*/
-/*  text-align: justify;*/
-/*}*/
-
-/*.textHighlight {*/
-/*  color: red;*/
-/*  font-size: large;*/
-/*}*/
-
 .block_2_row {
     background-color: ghostwhite;
 }
@@ -812,7 +800,7 @@ body {
     background: url(../img/img_330.jpg) center;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -868,6 +856,12 @@ body {
     display: table;
     clear: both;
 }
+
+/*@supports (-webkit-overflow-scrolling: touch) {*/
+/*    .block3Row {*/
+/*        background-attachment: unset;*/
+/*    }*/
+/*}*/
 
 
 /* Block_4_Projects
@@ -1014,7 +1008,7 @@ body {
     background: url(../img/img_99.jpg) center;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
     color: ghostwhite;
@@ -1022,41 +1016,42 @@ body {
 }
 
 .footerRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.footerRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footerColumn {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    padding-top: 10vh;
 }
 
 .footer_icon_wrap {
-    /* display: block; */
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 20px;
-}
-
-.icon1 {
-    padding-top: 20px;
-}
-
-.email-text {
-    color: #666666 !important;
-}
-
-.phoneFoot {
-    padding-top: 15px;
-}
-
-/* Create five equal columns that floats next to each other */
-.footerColumn {
-    text-align: center;
-    margin-right: 40px;
-    padding-bottom: 30px;
-    padding-top: 80px;
 }
 
 .footerColumn p {
     color: #666666;
+    font-size: 14pt;
+}
+
+.email-text {
+    font-size: 14pt;
+    color: #666666 !important;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .footer {
+        background-attachment: scroll;
+    }
 }
 
 
@@ -1071,8 +1066,6 @@ body {
     animation: pulse 1.2s ease infinite;
 }
 
-
-/* #RESPONSIVE - END*/
 
 /* Media
 =======================================================*/
@@ -1132,11 +1125,12 @@ body {
     }
 
     .footer {
-        width: 100%;
+        height: 100%;
     }
-
-    .phoneFoot {
-        padding-top: 5px;
+    .footerRow {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .menu_button {
@@ -1204,7 +1198,6 @@ body {
 
     .block3Text p {
         font-size: 18pt;
-        /* margin-left: -25%; */
     }
 
     .block3Column p {
@@ -1240,11 +1233,12 @@ body {
     }
 
     .footer {
-        width: 100%;
+        height: 100%;
     }
-
-    .phoneFoot {
-        padding-top: 5px;
+    .footerRow {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .menu_button {
@@ -1274,9 +1268,6 @@ and (max-width: 900px) {
         font-size: 4rem;
     }
 
-    /*#slider-nav {*/
-    /*  right: 5rem;*/
-    /*}*/
     #slider-nav {
         top: 6rem;
         right: auto;
@@ -1318,12 +1309,6 @@ and (max-width: 900px) {
         font-size: 20pt;
     }
 
-    /*.block4Row {*/
-    /*  width: 100%;*/
-    /*}*/
-    /*.block4Header {*/
-    /*  width: 100%;*/
-    /*}*/
     .block4Text p {
         width: 100%;
         padding-left: 100px;
@@ -1350,19 +1335,14 @@ and (max-width: 900px) {
         font-size: 16pt;
     }
 
-    .footerColumn {
+    .footer {
+        height: 100%;
+    }
+
+    .footerRow {
         width: 100%;
-        /*margin-left: 15px;*/
-        /*padding-top: 50px;*/
-        padding-bottom: 10px;
-    }
-
-    .icon1 {
-        padding-top: 60px;
-    }
-
-    .phoneFoot {
-        padding-top: 5px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .menu_button {
@@ -1415,6 +1395,7 @@ and (max-width: 900px) {
         width: 100%;
         padding-top: 50px;
         text-align: center;
+        background: ghostwhite;
     }
 
     .block3Column {
@@ -1428,7 +1409,6 @@ and (max-width: 900px) {
 
     .block3Text p {
         font-size: 18pt;
-        /*margin-left: -25%;*/
     }
 
     .block3Column p {
@@ -1476,6 +1456,10 @@ and (max-width: 900px) {
         height: 570px;
     }
 
+    .footer {
+        height: 100%;
+    }
+
     .footerRow {
         width: 100%;
         display: block;
@@ -1483,12 +1467,8 @@ and (max-width: 900px) {
 
     .footerColumn {
         width: 100%;
-        padding: 0px;
+        padding-top: 20px;
         padding-bottom: 20px;
-    }
-
-    .footer {
-        height: 100%;
     }
 
     .menu_button {

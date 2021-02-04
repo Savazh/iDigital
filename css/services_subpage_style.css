@@ -20,11 +20,6 @@ a:hover {
     color: black; /* Цвет ссылки */
    } 
 
-
-html {
-    font-size: 30px;
-}
-
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -46,7 +41,17 @@ p {
     margin: 0 0 10px;
     font-size: 13pt;
     line-height: 2;
-    display: block;
+    display: inline-block;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    /*overflow: hidden;*/
+    height: 100vh;
 }
 
 q {
@@ -332,6 +337,7 @@ q {
 }
 
 .block_1_header {
+    font-size: 24pt;
     font-weight: 700;
     line-height: 1.5;
     padding-bottom: 4%;
@@ -368,6 +374,7 @@ font-weight: 500;
 }
 
 .headerStyle {
+    font-size: 18pt;
     margin-left: -20px;
     padding-bottom: 10px;
     color: black;
@@ -392,7 +399,7 @@ li {
 
 .reviewHeader {
     text-align: center;
-    font-size: 14;
+    font-size: 24pt;
     font-weight: 500;
 }
 
@@ -459,8 +466,11 @@ li {
   q {font-style: italic;}
 
 /* Add a blue color to the author */
-.author {color: cornflowerblue;}
-  
+.author {
+    font-size: 14pt;
+    color: cornflowerblue;
+}
+
 
 /* Footer
 =================*/
@@ -477,50 +487,53 @@ li {
     background: url(../img/img_99.jpg) center;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
     color: ghostwhite;
     text-align: center;
 }
 
-.footerRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.footerRow {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
 
-  .footer_icon_wrap {
-    /* display: block; */
-    margin-left: auto;
-    margin-right: auto;
+.footerRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footerColumn {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    padding-top: 10vh;
+}
+
+.footer_icon_wrap {
     padding-bottom: 20px;
 }
 
-.icon1 {
-    padding-top: 20px;
+.footerColumn p {
+    color: #666666;
+    font-size: 14pt;
+    font-weight: 500;
 }
 
 .email-text {
+    font-size: 14pt;
     color: #666666 !important;
-  }
-
-  .phoneFoot {
-  padding-top: 15px;
+    font-weight: 500;
 }
-  
-  /* Create five equal columns that floats next to each other */
-  .footerColumn {
-    text-align: center;
-    margin-right: 40px;
-    padding-bottom: 30px;
-    padding-top: 80px;
-  }
 
-  .footerColumn p {
-    color: #666666;
-  }
+@supports (-webkit-overflow-scrolling: touch) {
+    .footer {
+        background-attachment: scroll;
+    }
+}
 
 
 /* Scroll Up Button
@@ -570,11 +583,13 @@ li {
         text-align: center;
     }
     .footer {
+        height: 100%;
+    }
+    .footerRow {
         width: 100%;
-        }
-      .phoneFoot {
-          padding-top: 12px;
-        }
+        padding-left: 10%;
+        padding-right: 10%;
+    }
        .menu_button{
           margin-left: 93%;
           padding-top: 25px;
@@ -612,18 +627,15 @@ and (max-width: 900px) {
     .block_1_header {
         text-align: center;
     }
-    .footerColumn  {
-        width: 100%;
-        margin-left: 0px;
-        padding: 0px;
-        padding-bottom: 10px;
-      }
-      .icon1 {
-        padding-top: 65px;
-      }
-      .footer {
+    .footer {
         height: 100%;
-      }
+    }
+
+    .footerRow {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
       .menu_button{
         margin-left: 93%;
         padding-top: 25px;
@@ -659,19 +671,19 @@ and (max-width: 900px) {
     .block_1_header {
         text-align: center;
     }
+    .footer {
+        height: 100%;
+    }
+
     .footerRow {
+        width: 100%;
         display: block;
     }
-    .footerColumn  {
-      width: 100%;
-      padding: 0px;
-      padding-bottom: 20px;
-    }
-    .icon1 {
-      padding-top: 50px;
-    }
-    .footer {
-      height: 100%;
+
+    .footerColumn {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .menu_button{
         margin-left: 700px;

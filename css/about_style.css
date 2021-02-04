@@ -27,11 +27,6 @@ a:hover {
     color: black; /* Цвет ссылки */
    } 
 
-
-html {
-    font-size: 30px;
-}
-
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -49,6 +44,17 @@ h6 {
     margin: 0;
     display: inline-block;
 }
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    /*overflow: hidden;*/
+    height: 100vh;
+}
+
 
 p {
   margin: 0 0 10px;
@@ -305,6 +311,7 @@ p {
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 50px;
+    font-size: 20pt;
 }
 
 .headerHighlight {
@@ -316,30 +323,6 @@ p {
 div.block1Text1 {
     padding: 20px;
   }
-  
-  /* @media screen and (min-width: 601px) {
-    div.block1Text1 {
-      font-size: 24pt;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    div.block1Text1 {
-      font-size: 12pt;
-    }
-  }
-
-  @media screen and (min-width: 601px) {
-    div.block1Text2 {
-      font-size: 16pt;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    div.block1Text2 {
-      font-size: 8pt;
-    }
-  } */
 
 
 /* Block_2
@@ -375,6 +358,10 @@ div.block1Text1 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 80px;
+}
+
+.block2Column h5 {
+    font-size: 16pt;
 }
 
 .list_1 {
@@ -468,89 +455,64 @@ div.block1Text1 {
 =================*/
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 400px;
-  background: url(../img/img_99.jpg) center;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: ghostwhite;
-  text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../img/img_99.jpg) center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ghostwhite;
+    text-align: center;
 }
 
-.footerRow{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.footerRow {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.footerRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footerColumn {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    padding-top: 10vh;
 }
 
 .footer_icon_wrap {
-  /* display: block; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
-
-.icon1 {
-  padding-top: 20px;
-}
-
-.email-text {
-  color: #666666 !important;
-}
-
-.phoneFoot {
-padding-top: 12px;
-}
-
-/* Create five equal columns that floats next to each other */
-.footerColumn {
-  text-align: center;
-  margin-right: 40px;
-  padding-bottom: 30px;
-  padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 .footerColumn p {
-  color: #666666;
+    color: #666666;
+    font-size: 14pt;
+    font-weight: 500;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-/* @media screen and (max-width: 900px) {
-  .footerColumn  {
-      width: 50%;
-  }
-
-  .menu_button{
-    margin-left: 620px;
-  }
-
-} */
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-  .footerColumn  {
-      width: 100%;
-  }
+.email-text {
+    font-size: 14pt;
+    color: #666666 !important;
+    font-weight: 500;
 }
 
-@media only screen and (max-width: 1200px){
-            .block2Column{
-              float: left;
-              width: 100%;
-              padding: 0px !important; 
-              margin-top: 0;
-            }
-          } */
+@supports (-webkit-overflow-scrolling: touch) {
+    .footer {
+        background-attachment: scroll;
+    }
+}
 
 
 /* Scroll Up Button
@@ -587,18 +549,14 @@ padding-top: 12px;
     font-size: 28pt;
     padding: 15px;
   }
-  .footerColumn  {
-    width: 100%;
-    margin-left: 0px;
-    padding: 0px;
-    padding-bottom: 10px;
-  }
-  .icon1 {
-    padding-top: 30px;
-  }
-  .footer {
-    height: 100%;
-  }
+    .footer {
+        height: 100%;
+    }
+    .footerRow {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
   .menu_button{
     margin-left: 93%;
     padding-top: 25px;
@@ -642,18 +600,15 @@ and (max-width: 900px) {
     width: 80%;
     padding-top: 50px;
   }
-  .footerColumn  {
-    width: 100%;
-    margin-left: 0px;
-    padding: 0px;
-    padding-bottom: 10px;
-  }
-  .icon1 {
-    padding-top: 70px;
-  }
-  .footer {
-    height: 100%;
-  }
+    .footer {
+        height: 100%;
+    }
+
+    .footerRow {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
   .menu_button{
     margin-left: 93%;
     padding-top: 25px;
@@ -696,20 +651,20 @@ and (max-width: 900px) {
     width: 80%;
     padding-top: 50px;
   }
-  .footerRow {
-    display: block;
-}
-  .footerColumn  {
-    width: 100%;
-    padding: 0px;
-    padding-bottom: 20px;
-  }
-  .icon1 {
-    padding-top: 50px;
-  }
-  .footer {
-    height: 100%;
-  }
+    .footer {
+        height: 100%;
+    }
+
+    .footerRow {
+        width: 100%;
+        display: block;
+    }
+
+    .footerColumn {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
   .menu_button{
     margin-left: 700px;
     padding-top: 30px;

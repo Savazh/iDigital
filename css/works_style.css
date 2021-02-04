@@ -28,11 +28,6 @@ a:hover {
     color: black; /* Цвет ссылки */
    } 
 
-
-html {
-    font-size: 30px;
-}
-
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -48,6 +43,16 @@ h4,
 h5,
 h6 {
     margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    /*overflow: hidden;*/
+    height: 100vh;
 }
 
 p {
@@ -398,60 +403,63 @@ h1 {
 =================*/
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 400px;
-  background: url(../img/img_99.jpg) center;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: ghostwhite;
-  text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: url(../img/img_99.jpg) center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ghostwhite;
+    text-align: center;
 }
 
-.footerRow{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.footerRow {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.footerRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footerColumn {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    padding-top: 10vh;
 }
 
 .footer_icon_wrap {
-  /* display: block; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
-
-.icon1 {
-  padding-top: 20px;
-}
-
-.email-text {
-  color: #666666 !important;
-}
-
-.phoneFoot {
-padding-top: 12px;
-}
-
-/* Create five equal columns that floats next to each other */
-.footerColumn {
-  text-align: center;
-  margin-right: 40px;
-  padding-bottom: 30px;
-  padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 .footerColumn p {
-  color: #666666;
+    color: #666666;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.email-text {
+    font-size: 14pt;
+    color: #666666 !important;
+    font-weight: 500;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .footer {
+        background-attachment: scroll;
+    }
 }
   
 
@@ -501,18 +509,14 @@ padding-top: 12px;
   a {
     font-size: 20pt;
   }
-  .footerColumn  {
-    width: 100%;
-    margin-left: 0px;
-    padding: 0px;
-    padding-bottom: 10px;
-  }
-  .icon1 {
-    padding-top: 30px;
-  }
-  .footer {
-    height: 100%;
-  }
+    .footer {
+        height: 100%;
+    }
+    .footerRow {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
   .menu_button{
     margin-left: 93%;
     padding-top: 25px;
@@ -551,18 +555,15 @@ and (max-width: 900px) {
   a {
     font-size: 20pt;
   }
-  .footerColumn  {
-    width: 100%;
-    margin-left: 0px;
-    padding: 0px;
-    padding-bottom: 10px;
-  }
-  .icon1 {
-    padding-top: 50px;
-  }
-  .footer {
-    height: 100%;
-  }
+    .footer {
+        height: 100%;
+    }
+
+    .footerRow {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
   .menu_button{
     margin-left: 93%;
     padding-top: 25px;
@@ -603,20 +604,20 @@ and (max-width: 900px) {
   a {
     font-size: 14pt;
   }
-  .footerRow {
-    display: block;
-}
-.footerColumn  {
-  width: 100%;
-  padding: 0px;
-  padding-bottom: 20px;
-}
-.icon1 {
-  padding-top: 50px;
-}
-.footer {
-  height: 100%;
-}
+    .footer {
+        height: 100%;
+    }
+
+    .footerRow {
+        width: 100%;
+        display: block;
+    }
+
+    .footerColumn {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 .menu_button{
     margin-left: 700px;
     padding-top: 30px;
