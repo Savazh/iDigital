@@ -834,6 +834,7 @@ body {
 .block3ColumnMainText {
     font-size: 16pt;
     font-weight: 600;
+    color: black !important;
 }
 
 .block3Column i:hover {

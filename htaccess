@@ -1,0 +1,21 @@
+# mod_rewrite starts here
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+
+RewriteRule ^([^.]+)\.html$ http://www.idigitalstudio.ca/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+
+# does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
+RewriteCond %{REQUEST_fileNAME} !-d
+
+# Check for file in directory with .html extension
+RewriteCond %{REQUEST_fileNAME} !-f
+
+# Here we actually show the page that has the .html extension
+RewriteRule (.*) /$1.html [L]
+
+Redirect 301 /index http://www.idigitalstudio.ca
