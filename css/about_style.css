@@ -508,6 +508,11 @@ div.block1Text1 {
     font-weight: 500;
 }
 
+.phoneFoot a {
+    font-size: 14pt;
+    color: #666666;
+}
+
 @supports (-webkit-overflow-scrolling: touch) {
     .footer {
         background-attachment: scroll;

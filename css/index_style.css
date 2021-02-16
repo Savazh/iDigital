@@ -751,12 +751,18 @@ body {
 
 .block2Text3 a {
     font-size: 16pt;
-    font-weight: 600;
+    font-weight: 500;
     color: red;
 }
 
+.block2Text4 a {
+    font-weight: 500;
+    font-size: 14pt;
+    color: #3a539b;
+}
+
 .block2Text4 p {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14pt;
     color: #3a539b;
 }
@@ -894,11 +900,12 @@ body {
 /* Create four equal columns that floats next to each other */
 .block4Column {
     float: left;
-    width: 25%;
+    width: 33.333%;
     height: 500px;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 3;
+    padding-bottom: 550px;
 }
 
 .contentWrapper {
@@ -908,6 +915,15 @@ body {
     height: auto;
     width: 100%;
     overflow: hidden; /* Скрываем всё за контуром */
+}
+
+.contentWrapper p {
+    font-size: 14pt;
+}
+
+.contentWrapper h5 {
+    font-size: 18pt;
+    font-weight: 700;
 }
 
 .block4Logo {
@@ -1048,6 +1064,10 @@ body {
     font-size: 14pt;
     color: #666666 !important;
 }
+.phoneFoot a {
+    font-size: 14pt;
+    color: #666666;
+}
 
 @supports (-webkit-overflow-scrolling: touch) {
     .footer {
@@ -1122,7 +1142,7 @@ body {
     }
 
     .contentWrapper {
-        height: 350px;
+        height: 400px;
     }
 
     .footer {

@@ -374,8 +374,17 @@ h1 {
   display: block;
 }
 
+.PortfolioHeader h5 {
+    font-size: 36pt;
+}
+
+.PortfolioHeader p {
+    font-size: 16pt;
+}
+
 /* Style the buttons */
 .btn {
+    display: none;
   border: none;
   outline: none;
   padding: 15px 30px;
@@ -454,6 +463,11 @@ h1 {
     font-size: 14pt;
     color: #666666 !important;
     font-weight: 500;
+}
+
+.phoneFoot a {
+    font-size: 14pt;
+    color: #666666;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
