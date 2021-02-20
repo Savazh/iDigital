@@ -20,33 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7e3b162-9553-4c9e-bcb1-3cae4409e68c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contacts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/about_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/portfolio_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/portfolio_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/services_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/services_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/services_subpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/services_subpage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/works_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/works_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/img_320.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/img_320.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactFrom_v6/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ContactFrom_v6/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-services/branding.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-services/branding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-services/ecommerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-services/ecommerce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-services/marketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-services/marketing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-services/search-engine-optimization.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-services/search-engine-optimization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-services/web-design.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-services/web-design.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-services/web-development.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-services/web-development.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/activebox.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/activebox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/bookstore.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/bookstore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/enlight.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/enlight.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/finmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/finmap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/instatech.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/instatech.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/lost_shirt.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/lost_shirt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/pullr.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/pullr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/telebot.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/telebot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/vivis_organics.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/vivis_organics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works.html" beforeDir="false" afterPath="$PROJECT_DIR$/works.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -81,6 +62,9 @@
       <recent name="E:\Web-Design\_portfolio\iDigital\scripts" />
       <recent name="E:\Web-Design\_portfolio\iDigital\img" />
       <recent name="E:\Web-Design\_portfolio\iDigital\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Web-Design\_portfolio\iDigital" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -116,6 +100,8 @@
       <workItem from="1613269627521" duration="3849000" />
       <workItem from="1613366600194" duration="8759000" />
       <workItem from="1613431835643" duration="7853000" />
+      <workItem from="1613616178155" duration="4130000" />
+      <workItem from="1613789874244" duration="3780000" />
     </task>
     <servers />
   </component>
